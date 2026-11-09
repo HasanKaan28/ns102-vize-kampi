@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="NS102 Physics midterm practice: problems, conceptual questions and clicker key for chapters 1-7.">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>Vize Kampı Güz 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Sofia+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+
+/* Layout: one study notebook, three tabs (Fizik · Plan · Udemy). Course colors match the Güz 2026 Ders Programı page. Physics tab runs in exam order: exam card, last year's paper, clicker key, lessons, practice generator, quiz. */
+:root {
+  --bg: #F2F4F7;
+  --surface: #FFFFFF;
+  --ink: #16202B;
+  --muted: #5A6776;
+  --line: #DCE2E9;
+  --accent: #D9480F;
+  --ok: #2B8A3E;
+  --warn: #B35C00;
+  --bad: #C92A2A;
+  --ns: #D9480F; --cs: #1C7ED6; --math: #7048E8; --ens: #2B8A3E; --elit: #C2255C; --udemy: #6B47D6;
+  --f-display: "Sofia Sans Extra Condensed", "Arial Narrow", sans-serif;
+  --f-body: "Sofia Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --f-math: "STIX Two Text", "Cambria Math", "Times New Roman", serif;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E141C; --surface: #151E29; --ink: #E5EAF1; --muted: #95A3B5; --line: #263243;
+    --accent: #FF8A4C; --ok: #5DC876; --warn: #F0A650; --bad: #FF7B7B;
+    --ns: #FF8A4C; --cs: #5AAAF2; --math: #A994FB; --ens: #5DC876; --elit: #F2709C; --udemy: #A88BFA;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E141C; --surface: #151E29; --ink: #E5EAF1; --muted: #95A3B5; --line: #263243;
+  --accent: #FF8A4C; --ok: #5DC876; --warn: #F0A650; --bad: #FF7B7B;
+  --ns: #FF8A4C; --cs: #5AAAF2; --math: #A994FB; --ens: #5DC876; --elit: #F2709C; --udemy: #A88BFA;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.55; }
+.c-ns { --c: var(--ns); } .c-cs { --c: var(--cs); } .c-math { --c: var(--math); } .c-ens { --c: var(--ens); } .c-elit { --c: var(--elit); } .c-udemy { --c: var(--udemy); }
+.page { max-width: 980px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 24px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(40px, 7vw, 60px); line-height: .92; }
+h2 { font-family: var(--f-display); font-weight: 700; font-size: 30px; line-height: 1.05; }
+h3 { font-size: 18px; font-weight: 700; }
+p { margin: 0; }
+.eyebrow { font-family: var(--f-data); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+code, .mono { font-family: var(--f-data); font-size: .88em; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button { font: inherit; }
+.btn { background: var(--accent); color: var(--surface); border: 0; border-radius: 4px; padding: 6px 14px; font-weight: 600; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+
+/* Header */
+.head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 32px; }
+.head .lead { display: grid; gap: 8px; max-width: 60ch; }
+.count { display: grid; gap: 2px; padding: 12px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.count b { font-family: var(--f-display); font-size: 40px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+/* Tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--line); }
+.tabs a { text-decoration: none; color: var(--muted); font-weight: 600; padding: 10px 14px; border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.tabs a[aria-current="page"] { color: var(--ink); border-color: var(--accent); }
+.view { display: grid; gap: 32px; }
+.jump { display: flex; flex-wrap: wrap; gap: 6px; }
+.jump button { font-family: var(--f-data); font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.jump button:hover { border-color: var(--accent); }
+
+/* Exam card */
+.exam { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.part { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 4px; }
+.part .pts { font-family: var(--f-display); font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+.part .pts small { font-size: 16px; color: var(--muted); }
+.track { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; }
+.ch { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; background: var(--surface); display: grid; gap: 2px; }
+.ch .no { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.ch .nm { font-weight: 700; line-height: 1.25; }
+.ch .st { font-family: var(--f-data); font-size: 12px; }
+.ch.done .st { color: var(--ok); }
+.ch.now { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.ch.now .st { color: var(--accent); }
+.note { border-left: 3px solid var(--warn); padding: 8px 12px; background: var(--surface); font-size: 14px; color: var(--muted); }
+
+/* Lessons */
+.lesson { display: grid; gap: 18px; scroll-margin-top: 16px; }
+.lesson-head { display: grid; gap: 6px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); }
+.prose { display: grid; gap: 12px; max-width: 68ch; }
+.prose ul, .prose ol { margin: 0; padding-left: 22px; display: grid; gap: 4px; }
+.formulas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.f { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; display: grid; gap: 4px; min-width: 0; }
+.f .eq { font-family: var(--f-math); font-size: 19px; font-style: italic; }
+.f .lbl { font-size: 13px; color: var(--muted); }
+.ex { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.ex summary { cursor: pointer; padding: 12px 14px; font-weight: 600; list-style: none; display: flex; gap: 10px; align-items: baseline; }
+.ex summary::-webkit-details-marker { display: none; }
+.ex summary::before { content: "+"; font-family: var(--f-data); color: var(--accent); width: 1ch; flex: none; }
+.ex[open] summary::before { content: "−"; }
+.ex .body { padding: 0 14px 14px 36px; display: grid; gap: 8px; max-width: 74ch; }
+.math { font-family: var(--f-math); font-style: italic; font-size: 1.08em; }
+.step { font-family: var(--f-math); font-size: 17px; }
+.traps { display: grid; gap: 6px; padding: 12px 14px; border-radius: var(--radius); background: color-mix(in srgb, var(--bad) 7%, var(--surface)); border: 1px solid color-mix(in srgb, var(--bad) 30%, transparent); }
+.traps b { color: var(--bad); }
+.traps ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14px; }
+.fig { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; overflow-x: auto; }
+.fig svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+.fig svg text { fill: var(--ink); font-family: var(--f-math); font-style: italic; }
+.fig .slope { fill: color-mix(in srgb, var(--muted) 18%, var(--surface)); stroke: var(--muted); }
+.fig .block { fill: color-mix(in srgb, var(--accent) 25%, var(--surface)); stroke: var(--accent); }
+.fig .vec-n { stroke: var(--cs); stroke-width: 2.2; }
+.fig .vec-w { stroke: var(--accent); stroke-width: 2.2; }
+.fig .comp { stroke: var(--muted); stroke-width: 1.4; stroke-dasharray: 4 3; }
+.fig .arc { fill: none; stroke: var(--muted); }
+.fig .ah-n { fill: var(--cs); } .fig .ah-w { fill: var(--accent); } .fig .ah-m { fill: var(--muted); }
+
+/* Past exam */
+.exq { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: grid; }
+.exq-h { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.exq-h .id { font-family: var(--f-display); font-weight: 700; font-size: 24px; line-height: 1; color: var(--accent); }
+.exq-h .tp { font-weight: 700; }
+.exq-h .sc { margin-left: auto; font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.exq-b { padding: 12px 14px; display: grid; gap: 10px; }
+.paper { border-left: 3px solid var(--bad); padding: 6px 10px; font-size: 14px; background: color-mix(in srgb, var(--bad) 6%, var(--surface)); }
+.paper b { color: var(--bad); }
+.ans { display: inline-block; font-family: var(--f-data); font-size: 13px; padding: 2px 8px; border-radius: 3px; background: color-mix(in srgb, var(--ok) 14%, var(--surface)); color: var(--ok); border: 1px solid color-mix(in srgb, var(--ok) 40%, transparent); }
+
+/* Clicker key */
+.ckbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.ckbar button { font-family: var(--f-data); font-size: 12px; padding: 5px 10px; border-radius: 4px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.ckbar button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.ckbar .score { margin-left: auto; }
+.cklist { display: grid; gap: 6px; }
+.ck { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; display: grid; grid-template-columns: 64px 1fr; gap: 4px 12px; align-items: start; }
+.ck .qn { font-family: var(--f-data); font-weight: 500; font-size: 14px; padding-top: 4px; }
+.ck .tp { font-weight: 600; font-size: 15px; }
+.ck .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; grid-column: 2; }
+.ck .row button { width: 36px; height: 32px; border-radius: 4px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); font-family: var(--f-data); cursor: pointer; }
+.ck .row button:disabled { cursor: default; }
+.ck .row button.right { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 15%, var(--surface)); color: var(--ok); font-weight: 600; }
+.ck .row button.wrong { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 12%, var(--surface)); color: var(--bad); }
+.ck .row .reveal { width: auto; padding: 0 8px; font-family: var(--f-body); font-size: 13px; color: var(--muted); background: transparent; border-style: dashed; }
+.ck .why { grid-column: 2; font-size: 14px; color: var(--muted); }
+.ck.miss { border-left: 3px solid var(--bad); }
+.ck.hit { border-left: 3px solid var(--ok); }
+
+/* Book lists */
+.bk { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.bk.star { border-left: 3px solid var(--accent); }
+.bk.done { opacity: .72; }
+.bk summary { cursor: pointer; list-style: none; padding: 10px 12px; display: grid; grid-template-columns: auto 64px 1fr; gap: 10px; align-items: baseline; }
+.bk summary::-webkit-details-marker { display: none; }
+.bk summary input { width: 18px; height: 18px; accent-color: var(--ok); margin: 0; align-self: center; }
+.bk .qn { font-family: var(--f-data); font-size: 14px; font-weight: 500; }
+.bk .qn small { color: var(--muted); font-weight: 400; }
+.bk .tp { font-weight: 600; font-size: 15px; }
+.bk .tp em { font-style: normal; font-family: var(--f-data); font-size: 11px; color: var(--accent); margin-left: 6px; }
+.bk .body { padding: 0 12px 12px calc(12px + 18px + 10px + 64px + 10px); display: grid; gap: 6px; font-size: 15px; }
+.bk .body .a { font-family: var(--f-math); font-size: 16px; }
+.bk .body .k { color: var(--muted); font-size: 14px; }
+@media (max-width: 520px) { .bk summary { grid-template-columns: auto 1fr; } .bk summary .tp { grid-column: 1 / -1; } .bk .body { padding-left: 12px; } }
+
+/* Practice generator */
+.gen { display: grid; gap: 12px; }
+.gbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.gq { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; display: grid; gap: 10px; }
+.gq .stem { font-size: 15px; max-width: 75ch; }
+.gq .tag { font-family: var(--f-data); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.gin { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.gin label { font-family: var(--f-math); font-style: italic; min-width: 2.5em; }
+.gin input { font: inherit; font-family: var(--f-data); font-size: 14px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--ink); width: 9em; }
+.gin .unit { font-family: var(--f-math); color: var(--muted); }
+.gin .res { font-family: var(--f-data); font-size: 13px; }
+.gin .res.ok { color: var(--ok); } .gin .res.bad { color: var(--bad); }
+.gq .sol { font-family: var(--f-math); font-size: 16px; display: grid; gap: 4px; border-top: 1px dashed var(--line); padding-top: 8px; }
+
+/* Quiz */
+.quiz { display: grid; gap: 12px; }
+.qcard { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; display: grid; gap: 10px; }
+.qcard .qt { font-weight: 600; }
+.qcard .tag { font-family: var(--f-data); font-size: 11px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.opts { display: grid; gap: 6px; }
+.opts button { text-align: left; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 8px 10px; cursor: pointer; }
+.opts button:hover:not(:disabled) { border-color: var(--accent); }
+.opts button:disabled { cursor: default; }
+.opts button.right { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 12%, var(--surface)); }
+.opts button.wrong { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--surface)); }
+.why { font-size: 14px; color: var(--muted); }
+.qcard .why { border-top: 1px dashed var(--line); padding-top: 8px; }
+.score { font-family: var(--f-data); font-size: 14px; }
+
+/* Plan */
+.dates { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; }
+.dates label { display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--c); border-radius: var(--radius); padding: 8px 10px; font-size: 14px; font-weight: 600; }
+.dates input { font: inherit; font-family: var(--f-data); font-size: 13px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--ink); min-width: 0; width: 100%; }
+.dates .left { font-family: var(--f-data); font-size: 12px; color: var(--muted); font-weight: 400; }
+.progress { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.bar { flex: 1 1 200px; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+.days { display: grid; gap: 14px; }
+.day { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.day.today { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.day.exam { border-color: var(--ns); background: color-mix(in srgb, var(--ns) 6%, var(--surface)); }
+.day-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 12px 14px 8px; border-bottom: 1px solid var(--line); }
+.day-h .dn { font-family: var(--f-display); font-weight: 700; font-size: 24px; line-height: 1; }
+.day-h .dd { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.day-h .cls { font-size: 13px; color: var(--muted); margin-left: auto; }
+.day.today .dn::after { content: "bugün"; margin-left: 8px; font-family: var(--f-data); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); vertical-align: 4px; }
+.tasks { list-style: none; margin: 0; padding: 6px 0; display: grid; }
+.task { display: grid; grid-template-columns: auto 1fr; gap: 10px; padding: 8px 14px; align-items: start; }
+.task + .task { border-top: 1px solid color-mix(in srgb, var(--line) 60%, transparent); }
+.task input { margin-top: 5px; width: 18px; height: 18px; accent-color: var(--ok); }
+.task .tx { display: grid; gap: 2px; min-width: 0; }
+.task .top { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.chip { font-family: var(--f-data); font-size: 11px; font-weight: 500; padding: 1px 6px; border-radius: 3px; color: var(--c); background: color-mix(in srgb, var(--c) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); white-space: nowrap; }
+.task .what { font-weight: 600; }
+.task .time { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.task .ud { font-size: 14px; color: var(--muted); }
+.task .ud b { color: var(--udemy); font-weight: 600; }
+.task.done .what { text-decoration: line-through; color: var(--muted); }
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+.rule { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 4px; font-size: 15px; }
+.rule b { font-family: var(--f-data); font-size: 12px; color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-weight: 500; }
+
+/* Udemy */
+.ucards { display: grid; gap: 12px; }
+.ucard { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--c); border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 8px; }
+.ucard ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.links { display: flex; flex-wrap: wrap; gap: 6px; }
+.links a { font-family: var(--f-data); font-size: 12px; text-decoration: none; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; color: var(--udemy); background: var(--bg); }
+.links a:hover { border-color: var(--udemy); }
+.foot { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+@media (max-width: 520px) { .ck { grid-template-columns: 1fr; } .ck .row, .ck .why { grid-column: 1; } }
+@media (prefers-reduced-motion: reduce) { .bar i { transition: none; } * { scroll-behavior: auto !important; } }
+
+
+/* ===== Practice app: exam-paper card on the right, filter rail and question map on the left ===== */
+:root { --paper: #FFFFFF; --paper-line: #C9D2DC; --ok-soft: color-mix(in srgb, var(--ok) 14%, var(--surface)); --bad-soft: color-mix(in srgb, var(--bad) 12%, var(--surface)); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #18222E; --paper-line: #33414F; } }
+:root[data-theme="dark"] { --paper: #18222E; --paper-line: #33414F; }
+.page { max-width: 1180px; }
+.app { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 860px) { .app { grid-template-columns: 1fr; } }
+.rail { display: grid; gap: 14px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); }
+@media (max-width: 860px) { .rail { position: static; } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; display: grid; gap: 10px; min-width: 0; }
+.panel h3 { font-family: var(--f-data); font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.meters { display: grid; gap: 8px; }
+.meter { display: grid; grid-template-columns: 96px 1fr auto; gap: 8px; align-items: center; font-size: 13px; }
+.meter b { font-family: var(--f-data); font-weight: 500; font-size: 11px; white-space: nowrap; }
+.meter .track2 { height: 7px; border-radius: 4px; background: var(--line); overflow: hidden; display: flex; }
+.meter .track2 i { display: block; height: 100%; }
+.meter .track2 .g { background: var(--ok); } .meter .track2 .r { background: var(--bad); }
+.meter span:last-child { font-family: var(--f-data); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.seg { display: flex; flex-wrap: wrap; gap: 4px; }
+.seg button { font-family: var(--f-data); font-size: 12px; padding: 5px 9px; border-radius: 4px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.qmap { display: grid; grid-template-columns: repeat(auto-fill, minmax(30px, 1fr)); gap: 4px; max-height: 300px; overflow-y: auto; padding: 2px; }
+.qmap button { height: 26px; border-radius: 3px; border: 1px solid var(--line); background: var(--bg); color: var(--muted); font-family: var(--f-data); font-size: 10px; cursor: pointer; padding: 0; }
+.qmap button.ok { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
+.qmap button.bad { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
+.qmap button.seen { border-style: dashed; }
+.qmap button.cur { outline: 2px solid var(--accent); outline-offset: 1px; color: var(--ink); }
+.qmap button.star::after { content: "★"; font-size: 8px; color: var(--accent); vertical-align: 4px; margin-left: 1px; }
+.legend2 { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; color: var(--muted); }
+.legend2 i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; border: 1px solid var(--line); margin-right: 4px; vertical-align: -1px; }
+.legend2 .lo { background: var(--ok-soft); border-color: var(--ok); } .legend2 .lb { background: var(--bad-soft); border-color: var(--bad); }
+
+.stage { display: grid; gap: 12px; min-width: 0; }
+.topbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.topbar .pos { font-family: var(--f-data); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.topbar .sp { flex: 1; }
+.iconbtn { font-family: var(--f-data); font-size: 12px; padding: 6px 10px; border-radius: 4px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.iconbtn:hover { border-color: var(--accent); }
+.sheet { background: var(--paper); border: 1px solid var(--paper-line); border-radius: 4px; box-shadow: 0 1px 0 var(--paper-line), 0 10px 30px -18px color-mix(in srgb, var(--ink) 40%, transparent); }
+.sheet-h { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; padding: 14px 18px 10px; border-bottom: 1px solid var(--paper-line); }
+.ptag { font-family: var(--f-data); font-size: 11px; font-weight: 500; letter-spacing: .05em; padding: 2px 8px; border-radius: 3px; color: var(--surface); background: var(--ink); }
+.ptag.A { background: var(--cs); } .ptag.B { background: var(--math); } .ptag.C { background: var(--accent); }
+.ref { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.lvl { font-size: 12px; color: var(--muted); letter-spacing: 1px; }
+.starb { font-family: var(--f-data); font-size: 11px; color: var(--accent); border: 1px solid var(--accent); border-radius: 3px; padding: 1px 6px; }
+.sheet-h .st2 { margin-left: auto; font-family: var(--f-data); font-size: 12px; }
+.st2.ok { color: var(--ok); } .st2.bad { color: var(--bad); }
+.sheet-b { padding: 16px 18px 18px; display: grid; gap: 14px; }
+.qtitle { font-family: var(--f-display); font-weight: 700; font-size: 26px; line-height: 1.05; }
+.qtext { font-family: var(--f-math); font-size: 18px; line-height: 1.55; max-width: 70ch; }
+.box { border: 1.5px solid var(--ink); border-radius: 2px; padding: 12px 14px 14px; display: grid; gap: 10px; }
+.box-l { font-family: var(--f-math); font-weight: 600; font-size: 14px; }
+.parts2 { display: grid; gap: 8px; }
+.prow { display: grid; grid-template-columns: minmax(70px, auto) minmax(0, 170px) auto auto; gap: 10px; align-items: center; justify-content: start; }
+@media (max-width: 520px) { .prow { grid-template-columns: auto minmax(0, 1fr) auto; } .prow .res2 { grid-column: 1 / -1; } }
+.prow label { font-family: var(--f-math); font-style: italic; font-size: 16px; }
+.prow input { font: inherit; font-family: var(--f-data); font-size: 15px; padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 3px; background: var(--bg); color: var(--ink); width: 100%; min-width: 0; }
+.prow input.ok { border-color: var(--ok); background: var(--ok-soft); } .prow input.bad { border-color: var(--bad); background: var(--bad-soft); }
+.prow .unit { font-family: var(--f-math); color: var(--muted); }
+.res2 { font-family: var(--f-data); font-size: 12px; }
+.res2.ok { color: var(--ok); } .res2.bad { color: var(--bad); }
+.acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.acts .hintk { font-family: var(--f-data); font-size: 11px; color: var(--muted); margin-left: auto; }
+.solbox { border-left: 3px solid var(--ok); background: var(--ok-soft); padding: 10px 12px; display: grid; gap: 4px; font-family: var(--f-math); font-size: 16px; }
+.solbox .lab { font-family: var(--f-data); font-size: 11px; color: var(--ok); letter-spacing: .05em; text-transform: uppercase; }
+.answ { font-family: var(--f-data); font-size: 13px; color: var(--muted); }
+textarea.own { font: inherit; font-family: var(--f-math); font-size: 16px; line-height: 1.5; min-height: 110px; padding: 10px; border: 1px dashed var(--paper-line); border-radius: 3px; background: var(--bg); color: var(--ink); resize: vertical; width: 100%; }
+.grade { display: flex; flex-wrap: wrap; gap: 8px; }
+.grade button { font: inherit; font-weight: 600; padding: 7px 14px; border-radius: 4px; cursor: pointer; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+.grade .g1 { border-color: var(--ok); color: var(--ok); } .grade .g2 { border-color: var(--bad); color: var(--bad); }
+.abcde { display: flex; flex-wrap: wrap; gap: 8px; }
+.abcde button { width: 52px; height: 44px; font-family: var(--f-data); font-size: 16px; border-radius: 4px; border: 1px solid var(--paper-line); background: var(--bg); color: var(--ink); cursor: pointer; }
+.abcde button.right { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); font-weight: 600; }
+.abcde button.wrong { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
+.slidecall { display: flex; gap: 10px; align-items: baseline; padding: 10px 12px; background: color-mix(in srgb, var(--cs) 8%, var(--surface)); border: 1px solid color-mix(in srgb, var(--cs) 30%, transparent); border-radius: 3px; font-size: 15px; }
+.slidecall b { font-family: var(--f-data); color: var(--cs); }
+.navrow { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.navrow .btn { min-width: 120px; }
+.empty { padding: 40px 18px; text-align: center; color: var(--muted); }
+.kbd { font-family: var(--f-data); font-size: 11px; color: var(--muted); }
+.kbd kbd { font-family: var(--f-data); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 3px; padding: 0 4px; background: var(--surface); }
+.note2 { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="head">
+    <div class="lead">
+      <p class="eyebrow">IUS · NS102 Physics · Vize: Cumartesi 14 Kasım 2026</p>
+      <h1>Vize Kampı</h1>
+      <p class="muted">Sınavın üç kısmının soruları tek destede: Part A clicker, Part B kitabın tartışma soruları, Part C kitabın exercise'ları. Problemler kendi cümlelerimle ve yeni sayılarla yazıldı; kitaptaki numarası kartın üstünde.</p>
+    </div>
+    <div class="count" id="count"><span class="eyebrow">Fizik vizesine</span><b id="countN">5 gün</b><span class="small muted" id="countSub">Cumartesi 14 Kasım</span></div>
+  </header>
+
+  <nav class="tabs" aria-label="Bölümler">
+    <a href="#soru" data-view="soru">Soru çöz</a>
+    <a href="#sinav" data-view="sinav">Sınav analizi</a>
+    <a href="#dersler" data-view="dersler">Konu anlatımı</a>
+    <a href="#plan" data-view="plan">Çalışma planı</a>
+    <a href="#udemy" data-view="udemy">Udemy Pro</a>
+  </nav>
+
+  <!-- ===================== SORU ÇÖZ ===================== -->
+  <section class="view" id="v-soru">
+    <div class="app">
+      <aside class="rail" aria-label="Filtreler ve soru haritası">
+        <div class="panel">
+          <h3>İlerleme</h3>
+          <div class="meters" id="meters"></div>
+        </div>
+        <div class="panel">
+          <h3>Sınav kısmı</h3>
+          <div class="seg" id="fType">
+            <button type="button" data-v="all" aria-pressed="true">Hepsi</button>
+            <button type="button" data-v="C" aria-pressed="false">C · Problem</button>
+            <button type="button" data-v="B" aria-pressed="false">B · Kavramsal</button>
+            <button type="button" data-v="A" aria-pressed="false">A · Clicker</button>
+          </div>
+          <h3>Bölüm</h3>
+          <div class="seg" id="fCh">
+            <button type="button" data-v="all" aria-pressed="true">Tümü</button>
+            <button type="button" data-v="1" aria-pressed="false">1</button>
+            <button type="button" data-v="2" aria-pressed="false">2</button>
+            <button type="button" data-v="3" aria-pressed="false">3</button>
+            <button type="button" data-v="4" aria-pressed="false">4</button>
+            <button type="button" data-v="5" aria-pressed="false">5</button>
+            <button type="button" data-v="6" aria-pressed="false">6</button>
+            <button type="button" data-v="7" aria-pressed="false">7</button>
+          </div>
+          <h3>Durum</h3>
+          <div class="seg" id="fSt">
+            <button type="button" data-v="all" aria-pressed="true">Hepsi</button>
+            <button type="button" data-v="new" aria-pressed="false">Yeni</button>
+            <button type="button" data-v="bad" aria-pressed="false">Yanlışlarım</button>
+            <button type="button" data-v="star" aria-pressed="false">★ Geçen yıl</button>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Soru haritası · <span id="mapCount"></span></h3>
+          <div class="qmap" id="qmap"></div>
+          <div class="legend2"><span><i class="lo"></i>doğru</span><span><i class="lb"></i>yanlış</span><span><i></i>yeni</span></div>
+        </div>
+      </aside>
+
+      <div class="stage">
+        <div class="topbar">
+          <span class="pos" id="pos"></span>
+          <span class="sp"></span>
+          <button type="button" class="iconbtn" id="shuffle">Karıştır</button>
+          <button type="button" class="iconbtn" id="reset">İlerlemeyi sıfırla</button>
+        </div>
+        <div id="card"></div>
+        <div class="navrow">
+          <button type="button" class="btn ghost" id="prev">← Önceki</button>
+          <span class="kbd"><kbd>←</kbd> <kbd>→</kbd> gezin · <kbd>Enter</kbd> kontrol</span>
+          <button type="button" class="btn" id="next">Sonraki →</button>
+        </div>
+        <p class="note2">Problemlerde %2 tolerans var; 3 anlamlı basamak yeter, ondalık için nokta ya da virgül kullanabilirsin. Clicker sorularının metni senin Pearson destelerinde (YF15e Ch01–06): slaytı aç, şıkkını burada işaretle. İlerlemen sadece bu tarayıcıda saklanır.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SINAV ===================== -->
+  <section class="view" id="v-sinav" hidden>
+    <!-- Sınav -->
+    <article class="lesson" id="s-sinav">
+      <div class="lesson-head">
+        <p class="eyebrow">Geçen yılın kâğıdına göre</p>
+        <h2>Sınav nasıl</h2>
+      </div>
+      <div class="exam">
+        <div class="part"><span class="eyebrow">Part A</span><span class="pts">20 <small>puan</small></span><span class="small">Doğrudan clicker sorularından. "Soru çöz" sekmesinde, A filtresiyle.</span></div>
+        <div class="part"><span class="eyebrow">Part B · kavramsal</span><span class="pts">30 <small>puan</small></span><span class="small">2 soru × 15. Kitabın "Discussion Questions" kısmından birebir (geçen yıl Q3.6 ve Q6.4).</span></div>
+        <div class="part"><span class="eyebrow">Part C · problem</span><span class="pts">50 <small>puan</small></span><span class="small">3 problem: 20 + 10 + 20. Kitabın "Exercises" kısmından (geçen yıl 5.4, 3.29, 5.33). Sayılar değişebiliyor.</span></div>
+      </div>
+      <div class="track">
+        <div class="ch done"><span class="no">Bölüm 1</span><span class="nm">Birimler, vektörler</span><span class="st">clicker 18 soru</span></div>
+        <div class="ch done"><span class="no">Bölüm 2</span><span class="nm">Doğrusal hareket</span><span class="st">clicker 21 soru</span></div>
+        <div class="ch done"><span class="no">Bölüm 3</span><span class="nm">Düzlemde hareket</span><span class="st">clicker 19 soru</span></div>
+        <div class="ch now"><span class="no">Bölüm 4</span><span class="nm">Newton yasaları</span><span class="st">clicker 17 soru</span></div>
+        <div class="ch now"><span class="no">Bölüm 5</span><span class="nm">Newton uygulamaları</span><span class="st">Part C'nin tamamı</span></div>
+        <div class="ch now"><span class="no">Bölüm 6</span><span class="nm">İş, kinetik enerji</span><span class="st">B2 + clicker 11 soru</span></div>
+      </div>
+      <p class="note">Kapsam: Bölüm 1–6. Geçen yılın 5 sorusunun hepsini Pearson eText'te (Young &amp; Freedman, University Physics 15e, Global Edition) buldum: B1 = Q3.6, B2 = Q6.4, C1 = Exercise 5.4, C2 = Exercise 3.29 (kitapta 280 m, sınavda 350 m), C3 = Exercise 5.33. Havuz büyük: Bölüm 1–6'da 153 tartışma sorusu ve 285 exercise var. "Soru çöz" sekmesinde bunlardan 71 problem (yeni sayılarla) ve 119 kavramsal soru var. Part A'nın sayfasını görmedim.</p>
+      <div class="traps">
+        <p><b>Geçen yılki kâğıtta puan kaybettiren 5 hata</b></p>
+        <ul>
+          <li>Maksimum statik sürtünmeyi mg sanmak. Doğrusu: <span class="math">f<sub>s,max</sub> = μ<sub>s</sub>n</span>.</li>
+          <li>Hareketsiz cisimdeki statik sürtünmeyi μ<sub>s</sub>n ile hesaplamak. Statik sürtünme denge denkleminden bulunur. μ<sub>s</sub>n sadece üst sınır.</li>
+          <li>Dairesel harekette <span class="math">v² = 2as</span> kullanmak. Dairesel harekette <span class="math">a = v²/R</span>.</li>
+          <li>İki ipin açılarını yanlış eksene ayırmak. Önce hangi eksende denge olduğunu yaz.</li>
+          <li>Kavramsal soruda soruyu cevaplamamak. "v cinsinden" diyorsa cevap <span class="math">v₂ = √2 v</span> gibi bir ifade olmalı.</li>
+        </ul>
+      </div>
+    </article>
+    <!-- Geçen yıl -->
+    <article class="lesson" id="s-gecen">
+      <div class="lesson-head">
+        <p class="eyebrow">Önce kendin çöz, sonra aç</p>
+        <h2>Geçen yılın sınavı: çözümler</h2>
+      </div>
+
+      <div class="exq">
+        <div class="exq-h"><span class="id">B1</span><span class="tp">Uçaktan düşen paket · kitapta Q3.6</span><span class="sc">15 puan</span></div>
+        <div class="exq-b">
+          <p class="small muted">Sabit hız ve yükseklikte giden uçaktan paket düşüyor. Pilot ve yerdeki kişi paketin yolunu nasıl görür?</p>
+          <details class="ex"><summary>Çözüm</summary><div class="body">
+            <p><b>Pilot:</b> paket hep uçağın tam altında kalır ve <b>düşey bir doğru</b> boyunca düşer. Sebep: paket uçaktan ayrıldığında uçakla aynı yatay hıza sahip. Hava direnci yok, yatay hız değişmez.</p>
+            <p><b>Yerdeki kişi:</b> paket yatay hız + serbest düşüş yapar, yolu bir <b>parabol</b>.</p>
+            <p class="muted small">Clicker Q3.13 ile aynı fikir. Cevapta "düz" deme, "düşey doğru, uçağın tam altında" de.</p>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="exq">
+        <div class="exq-h"><span class="id">B2</span><span class="tp">İki kat iş · kitapta Q6.4</span><span class="sc">15 puan · kâğıtta 0</span></div>
+        <div class="exq-b">
+          <p class="small muted">Durgun haldeki cismi W işi v hızına ve K kinetik enerjisine çıkarıyor. 2W iş yapılırsa hız (v cinsinden) ve kinetik enerji (K cinsinden) ne olur?</p>
+          <div class="paper"><b>Kâğıttaki hata:</b> formüller yazılmış ama soru cevaplanmamış. Hocanın notu: "You have not answered the questions."</div>
+          <details class="ex"><summary>Çözüm</summary><div class="body">
+            <p class="step">İş-enerji teoremi: W<sub>tot</sub> = ΔK = K − 0</p>
+            <p class="step">2W iş → K₂ = 2K</p>
+            <p class="step">½mv₂² = 2 · ½mv² → v₂² = 2v² → v₂ = √2 v ≈ 1.41v</p>
+            <p><span class="ans">K₂ = 2K,&nbsp; v₂ = √2 v</span></p>
+            <p class="muted small">Kalıp: K iş ile doğru orantılı, hız ise √iş ile. 4 kat iş → 2 kat hız.</p>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="exq">
+        <div class="exq-h"><span class="id">C1</span><span class="tp">Stryker çerçevesi · kitapta Exercise 5.4</span><span class="sc">20 puan · kâğıtta 5</span></div>
+        <div class="exq-b">
+          <p class="small muted">78.5 kg hasta, μ<sub>s</sub> = 0.500. (a) Hasta kaymadan W ağırlığının verebileceği maksimum çekme kuvveti? (b) O durumda boyunluğa bağlı her kablodaki gerilme? Kablolar yatayla 65° yapıyor.</p>
+          <div class="paper"><b>Kâğıttaki hata:</b> (a)'da önce f = mg = 769 N bulunmuş, sonra bu "μ·m"ye eşitlenip "m = 1538" gibi anlamsız bir sayı çıkmış. (b)'de ağırlık boyuna dik eksende değil, kablo denklemine yanlış eksende girmiş.</div>
+          <details class="ex"><summary>Çözüm</summary><div class="body">
+            <p><b>(a)</b> Hasta yatakta yatay. Düşeyde denge: n = mg. Çekme kuvveti, kaymaya karşı koyan maksimum statik sürtünmeye eşit olabilir:</p>
+            <p class="step">F<sub>max</sub> = μ<sub>s</sub>n = μ<sub>s</sub>mg = 0.500 × 78.5 × 9.80 = 385 N</p>
+            <p><b>(b)</b> İki kablo simetrik, ikisi de yatayla 65°. Yatay bileşenler birbirini götürür. Boyun yönündeki bileşenler toplanıp çekme kuvvetini verir:</p>
+            <p class="step">2T sin 65° = 385 N → T = 385 / (2 × 0.906) = 212 N</p>
+            <p><span class="ans">(a) 385 N &nbsp;(b) 212 N</span></p>
+            <p class="muted small">Kontrol: kablolar dik çekseydi (90°) T = 192 N olurdu. Açı küçüldükçe gerilme artar, 212 > 192 mantıklı.</p>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="exq">
+        <div class="exq-h"><span class="id">C2</span><span class="tp">Pike yapan jet · kitapta Exercise 3.29 (sayı değiştirilmiş)</span><span class="sc">10 puan · kâğıtta 0</span></div>
+        <div class="exq-b">
+          <p class="small muted">Yolun alt kısmı 350 m yarıçaplı çeyrek çember. Pilot 5.5g ivmede bayılıyor. Hangi hızda bayılır?</p>
+          <div class="paper"><b>Kâğıttaki hata:</b> çeyrek çemberin uzunluğu bulunup <span class="math">v² = 2as</span> kullanılmış (171 m/s). Bu formül sabit ivmeli doğrusal hareket için. Çembersel yolda ivme merkeze doğru ve <span class="math">v²/R</span>.</div>
+          <details class="ex"><summary>Çözüm</summary><div class="body">
+            <p class="step">a<sub>rad</sub> = v²/R = 5.5g</p>
+            <p class="step">v = √(5.5 × 9.80 × 350) = √18 865 = 137 m/s (≈ 494 km/h)</p>
+            <p><span class="ans">v ≈ 137 m/s</span></p>
+            <p class="muted small">Ek bilgi: en alt noktada koltuk pilota n = m(g + v²/R) = 6.5mg kuvvet uygular.</p>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="exq">
+        <div class="exq-h"><span class="id">C3</span><span class="tp">Rampada iki kutu · kitapta Exercise 5.33</span><span class="sc">20 puan · kâğıtta 10</span></div>
+        <div class="exq-b">
+          <p class="small muted">48.0 kg alt kutu, üstünde 32.0 kg kutu. Rampa 2.50 m yüksek, 4.75 m yatay. İp rampaya paralel, kutular 15.0 cm/s sabit hızla iniyor. μ<sub>k</sub> (rampa–alt kutu) = 0.444, μ<sub>s</sub> (kutular arası) = 0.800. (a) İpteki kuvvet? (b) Üst kutuya etki eden sürtünme kuvvetinin büyüklüğü ve yönü?</p>
+          <div class="paper"><b>Kâğıttaki hata:</b> (a) doğru yoldan çözülmüş, açı yuvarlandığı için 56.1 N çıkmış (doğrusu 57.1 N). (b)'de sürtünme μ<sub>s</sub>n = 252 N alınmış. Kutu kaymıyor, statik sürtünme dengeden bulunmalı.</div>
+          <details class="ex"><summary>Çözüm</summary><div class="body">
+            <p class="step">tan θ = 2.50/4.75 → θ = 27.76°, sin θ = 0.4657, cos θ = 0.8849</p>
+            <p><b>(a)</b> Sabit hız → ΣF = 0. İki kutuyu tek cisim al: M = 80.0 kg, Mg = 784 N. Kutular aşağı kaydığı için kinetik sürtünme rampa boyunca yukarı. İp de yukarı çekiyor.</p>
+            <p class="step">n = Mg cos θ = 784 × 0.8849 = 694 N,&nbsp; f<sub>k</sub> = 0.444 × 694 = 308 N</p>
+            <p class="step">T + f<sub>k</sub> = Mg sin θ → T = 365.1 − 308.0 = 57.1 N</p>
+            <p><b>(b)</b> Üst kutu da sabit hızla gidiyor, alt kutuya göre kaymıyor. Rampa boyunca dengede:</p>
+            <p class="step">f<sub>s</sub> = m<sub>üst</sub> g sin θ = 32.0 × 9.80 × 0.4657 = 146 N, rampa boyunca yukarı</p>
+            <p class="muted small">Kontrol: üst sınır μ<sub>s</sub>n = 0.800 × 32.0 × 9.80 × 0.8849 = 222 N. 146 N bunun altında, kutu kaymaz.</p>
+            <p><span class="ans">(a) 57.1 N &nbsp;(b) 146 N, rampa yukarı</span></p>
+            <p class="muted small">Ara sonuçlarda 3–4 anlamlı basamak tut. Açıyı 27.7°'ye yuvarlamak cevabı 1 N kaydırdı.</p>
+          </div></details>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ===================== DERSLER ===================== -->
+  <section class="view" id="v-dersler" hidden>
+    <div class="jump" aria-label="Dersler">
+      <button type="button" data-go="s-d1">Ders 1 Kinematik</button>
+      <button type="button" data-go="s-d2">Ders 2 Newton</button>
+      <button type="button" data-go="s-d3">Ders 3 Sürtünme · dairesel</button>
+      <button type="button" data-go="s-d4">Ders 4 İş · enerji</button>
+      <button type="button" data-go="s-d5">Ders 5 Potansiyel enerji</button>
+    </div>
+    <!-- Ders 1 -->
+    <article class="lesson" id="s-d1">
+      <div class="lesson-head">
+        <p class="eyebrow">Ders 1 · Bölüm 1–3 · tekrar</p>
+        <h2>Vektörler ve kinematik</h2>
+      </div>
+      <div class="formulas">
+        <div class="f"><span class="eq">A<sub>x</sub> = A cos θ,&nbsp; A<sub>y</sub> = A sin θ</span><span class="lbl">θ +x ekseninden. Açı +y'den ölçülürse sin ve cos yer değiştirir (Q1.2)</span></div>
+        <div class="f"><span class="eq">|A − B| ≤ |A⃗ + B⃗| ≤ A + B</span><span class="lbl">Q1.9, Q1.10</span></div>
+        <div class="f"><span class="eq">A⃗·B⃗ = A<sub>x</sub>B<sub>x</sub> + A<sub>y</sub>B<sub>y</sub> = AB cos φ</span><span class="lbl">dik vektörlerde 0 (Q1.15, Q1.17)</span></div>
+        <div class="f"><span class="eq">(A⃗×B⃗)<sub>z</sub> = A<sub>x</sub>B<sub>y</sub> − A<sub>y</sub>B<sub>x</sub></span><span class="lbl">î×ĵ = k̂, ĵ×k̂ = î, k̂×î = ĵ (Q1.16, Q1.18)</span></div>
+      </div>
+      <div class="prose">
+        <p><b>Grafikler:</b> x–t eğimi = v, v–t eğimi = a, v–t altındaki alan = Δx. x–t eğrisi aşağı bükülüyorsa a &lt; 0, yukarı bükülüyorsa a &gt; 0 (Q2.4). v ile a aynı işaretliyse cisim hızlanır, zıt işaretliyse yavaşlar (Q2.11).</p>
+        <p><b>x(t) verilirse:</b> türev al. v = dx/dt, a = dv/dt. x'te t³ varsa ivme sabit değildir (Q2.10). "x = 0'dan geçer mi" sorusunda ikinci derece denklemin diskriminantına bak (Q2.18).</p>
+      </div>
+      <div class="formulas">
+        <div class="f"><span class="eq">v = v₀ + at</span><span class="lbl">x yok</span></div>
+        <div class="f"><span class="eq">x = x₀ + v₀t + ½at²</span><span class="lbl">v yok</span></div>
+        <div class="f"><span class="eq">v² = v₀² + 2a(x − x₀)</span><span class="lbl">t yok. Sadece doğrusal, sabit a</span></div>
+        <div class="f"><span class="eq">h<sub>max</sub> = v₀²/2g</span><span class="lbl">3h için hız ×√3 (Q2.21)</span></div>
+        <div class="f"><span class="eq">R = v₀² sin 2α / g</span><span class="lbl">aynı yüksekliğe inen atış; 30° ve 60° aynı menzil</span></div>
+        <div class="f"><span class="eq">a<sub>rad</sub> = v²/R = 4π²R/T²</span><span class="lbl">her zaman merkeze doğru</span></div>
+        <div class="f"><span class="eq">v⃗<sub>P/A</sub> = v⃗<sub>P/B</sub> + v⃗<sub>B/A</sub></span><span class="lbl">rüzgâr, akıntı (Q3.18, Q3.19)</span></div>
+      </div>
+      <div class="prose">
+        <p><b>İvmenin yönü (Bölüm 3 clicker'larının yarısı bu):</b> ivmeyi iki bileşene ayır. Teğetsel bileşen sürat değişiyorsa var (hızlanıyorsa hareket yönünde, yavaşlıyorsa ters). Merkezcil bileşen yol eğriyse var, eğrinin içine doğru.</p>
+        <ul>
+          <li>Sabit süratle eğri yol: ivme sadece içe doğru (Q3.5, Q3.6). Oval yolda merkeze değil, yola dik içe doğru.</li>
+          <li>Tepenin üstü, yavaşlamadan hızlanmaya geçiş anı: teğetsel 0, ivme aşağı (Q3.7).</li>
+          <li>Sarkaç en alt nokta: yukarı. Uç noktalar: yola teğet, alta doğru (Q3.8, Q3.9).</li>
+          <li>a⃗·v⃗ &gt; 0 hızlanıyor, &lt; 0 yavaşlıyor. a⃗, v⃗'ye paralel değilse yol eğri (Q3.10, Q3.11).</li>
+        </ul>
+      </div>
+    </article>
+    <!-- Ders 2 -->
+    <article class="lesson" id="s-d2">
+      <div class="lesson-head">
+        <p class="eyebrow">Ders 2 · Bölüm 4</p>
+        <h2>Newton'un hareket yasaları</h2>
+      </div>
+      <div class="prose">
+        <ol>
+          <li><b>Birinci yasa:</b> ΣF⃗ = 0 ⇔ a⃗ = 0. "Sabit hızla" görürsen net kuvvet sıfır. Asansör sabit hızla iniyor da olsa çıkıyor da olsa T = mg (Q4.1, Q4.2, Q4.6).</li>
+          <li><b>İkinci yasa:</b> ΣF⃗ = ma⃗, her eksende ayrı. Net kuvvetin grafiği ivmenin, yani v–t eğiminin grafiğidir (Q4.3).</li>
+          <li><b>Üçüncü yasa:</b> A'nın B'ye kuvveti = B'nin A'ya kuvveti, <i>her zaman</i>. Hız, ivme, kütle, sürtünme fark etmez (Q4.4, 4.5, 4.14–4.17). Çift farklı cisimlere etki eder.</li>
+        </ol>
+        <p><b>Sık tuzak:</b> masadaki topta n = w eşitliği <i>birinci</i> yasadan gelir (Q4.12). Ağırlığın üçüncü yasa çifti, topun Dünya'yı yukarı çekmesidir (Q4.11).</p>
+        <p><b>Birlikte hareket eden cisimler:</b> aynı ivme. Net kuvvet kütleyle orantılı: ağır olanın net kuvveti daha büyük (Q4.7, Q4.13). Yürürken seni ileri iten yerin ayağına uyguladığı statik sürtünme (Q4.9).</p>
+        <h3>FBD: her problemde 4 adım</h3>
+        <ol>
+          <li>Tek cisim seç.</li>
+          <li>Sadece <i>o cisme</i> etki eden kuvvetleri çiz: ağırlık, temas eden her yüzeyin n'si ve sürtünmesi, ipler. "ma"yı kuvvet olarak çizme (Q5.4, Q5.7).</li>
+          <li>Ekseni ivme yönünde seç (eğik düzlemde eğim boyunca).</li>
+          <li>Her eksende ΣF = ma yaz.</li>
+        </ol>
+      </div>
+      <div class="fig" role="img" aria-label="Eğik düzlemde blok: ağırlık mg aşağı, normal kuvvet n yüzeye dik, ağırlığın bileşenleri mg sin theta eğim boyunca ve mg cos theta yüzeye dik">
+        <svg viewBox="0 0 420 240" width="420" height="240">
+          <defs>
+            <marker id="mw" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="ah-w"/></marker>
+            <marker id="mn" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="ah-n"/></marker>
+            <marker id="mm" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="ah-m"/></marker>
+          </defs>
+          <polygon points="30,210 390,210 390,2" class="slope"/>
+          <g transform="translate(210,106) rotate(-30)"><rect x="-30" y="-36" width="60" height="36" class="block"/></g>
+          <line x1="219" y1="90" x2="219" y2="190" class="vec-w" marker-end="url(#mw)"/>
+          <text x="226" y="186" font-size="16">mg</text>
+          <line x1="219" y1="90" x2="179" y2="21" class="vec-n" marker-end="url(#mn)"/>
+          <text x="160" y="22" font-size="16">n</text>
+          <line x1="219" y1="90" x2="175" y2="116" class="comp" marker-end="url(#mm)"/>
+          <text x="104" y="128" font-size="14">mg sin θ</text>
+          <line x1="219" y1="90" x2="263" y2="166" class="comp" marker-end="url(#mm)"/>
+          <text x="270" y="170" font-size="14">mg cos θ</text>
+          <path d="M80,210 A50,50 0 0 0 76,186" class="arc"/>
+          <text x="86" y="200" font-size="15">θ</text>
+        </svg>
+      </div>
+      <div class="formulas">
+        <div class="f"><span class="eq">n = mg cos θ &lt; mg</span><span class="lbl">eğik düzlemde (Q5.2, Q5.8)</span></div>
+        <div class="f"><span class="eq">a = g sin θ</span><span class="lbl">sürtünmesiz eğik düzlem</span></div>
+        <div class="f"><span class="eq">n = m(g ± a)</span><span class="lbl">asansör: yukarı ivme +, aşağı ivme −</span></div>
+        <div class="f"><span class="eq">2T cos β = w</span><span class="lbl">simetrik iki ip, β düşeyden. 45° → T = w/√2 (Q5.3)</span></div>
+      </div>
+      <details class="ex">
+        <summary>Çözümlü örnek: Atwood makinesi</summary>
+        <div class="body">
+          <p>Sürtünmesiz makaranın iki ucunda m₁ = 2.00 kg ve m₂ = 3.00 kg. İvme ve gerilme?</p>
+          <p class="step">m₁: T − m₁g = m₁a&nbsp;&nbsp;&nbsp; m₂: m₂g − T = m₂a</p>
+          <p class="step">a = (m₂ − m₁)g/(m₁ + m₂) = 1.96 m/s²,&nbsp; T = m₁(g + a) = 23.5 N</p>
+          <p class="muted small">Aşağı hızlanan cisimde T &lt; ağırlık (Q5.5, Q5.6).</p>
+        </div>
+      </details>
+    </article>
+    <!-- Ders 3 -->
+    <article class="lesson" id="s-d3">
+      <div class="lesson-head">
+        <p class="eyebrow">Ders 3 · Bölüm 5 · Part C'nin tamamı buradan</p>
+        <h2>Sürtünme ve dairesel hareket dinamiği</h2>
+      </div>
+      <div class="prose">
+        <h3>Sürtünme</h3>
+        <ul>
+          <li><b>Kinetik</b> (cisim kayıyorsa): <span class="math">f<sub>k</sub> = μ<sub>k</sub>n</span>, kaymaya ters yönde. Hızdan bağımsız.</li>
+          <li><b>Statik</b> (kaymıyorsa): <span class="math">f<sub>s</sub> ≤ μ<sub>s</sub>n</span>. Değeri dengeden bulunur. Eşitlik sadece "kaymak üzere" (maximum, without sliding) dendiğinde geçerli.</li>
+          <li>n'yi her zaman ayrıca bul. Yatayda n = mg, eğik düzlemde n = mg cos θ, açılı çekişte n = mg − F sin φ.</li>
+          <li>Eğik düzlemde sabit hızla kayıyorsa <span class="math">μ<sub>k</sub> = tan θ</span>.</li>
+          <li>Kaymadan yürüyorsan zeminin sana uyguladığı kuvvet <i>statik</i> sürtünme (Q5.10).</li>
+        </ul>
+        <h3>Dairesel hareket</h3>
+        <p>Merkeze doğru olan tüm kuvvet bileşenlerinin toplamı <span class="math">mv²/R</span>'ye eşit. "Merkezcil kuvvet" diye ayrı bir kuvvet çizme: o, gerilme, sürtünme, n ya da ağırlıktır.</p>
+      </div>
+      <div class="formulas">
+        <div class="f"><span class="eq">ΣF<sub>rad</sub> = mv²/R</span><span class="lbl">merkeze doğru pozitif</span></div>
+        <div class="f"><span class="eq">v<sub>max</sub> = √(μ<sub>s</sub>gR)</span><span class="lbl">düz virajda araba</span></div>
+        <div class="f"><span class="eq">tan β = v²/gR</span><span class="lbl">sürtünmesiz eğimli viraj</span></div>
+        <div class="f"><span class="eq">n − mg = mv²/R</span><span class="lbl">çukurun dibinde / çemberin altında</span></div>
+        <div class="f"><span class="eq">mg − n = mv²/R</span><span class="lbl">tepenin üstünde (n ≥ 0 → v ≤ √gR)</span></div>
+        <div class="f"><span class="eq">T cos β = mg,&nbsp; T sin β = mv²/R</span><span class="lbl">konik sarkaç → T &gt; mg (Q5.12)</span></div>
+      </div>
+      <details class="ex">
+        <summary>Çözümlü örnek 1: kutuyu itmek</summary>
+        <div class="body">
+          <p>20.0 kg kutu, μ<sub>s</sub> = 0.400, μ<sub>k</sub> = 0.300. Harekete geçirmek için gereken en küçük yatay kuvvet? Sabit hızla itmek için? Harekete geçtikten sonra ilk kuvvetle itmeye devam edilirse ivme?</p>
+          <p class="step">n = mg = 196 N → F<sub>başlat</sub> = μ<sub>s</sub>n = 78.4 N</p>
+          <p class="step">Sabit hız: F = f<sub>k</sub> = μ<sub>k</sub>n = 58.8 N</p>
+          <p class="step">a = (78.4 − 58.8)/20.0 = 0.980 m/s²</p>
+        </div>
+      </details>
+      <details class="ex">
+        <summary>Çözümlü örnek 2: düz viraj</summary>
+        <div class="body">
+          <p>Araba 50.0 m yarıçaplı düz virajda, μ<sub>s</sub> = 0.800. Kaymadan alabileceği en büyük hız?</p>
+          <p class="step">μ<sub>s</sub>mg = mv²/R → v = √(0.800 × 9.80 × 50.0) = 19.8 m/s (71 km/h)</p>
+          <p class="muted small">Kütle sadeleşir. Merkezcil kuvveti statik sürtünme sağlar (lastik yola göre yana kaymıyor).</p>
+        </div>
+      </details>
+      <details class="ex">
+        <summary>Çözümlü örnek 3: sarkacın en alt noktası (Q5.13 tipi)</summary>
+        <div class="body">
+          <p>L uzunluğunda sarkaç, en alt noktada ip gerilmesi (3/2)mg. Hız?</p>
+          <p class="step">T − mg = mv²/L → ½mg = mv²/L → v = √(gL/2)</p>
+        </div>
+      </details>
+      <div class="traps">
+        <p><b>Sık yapılan hatalar</b></p>
+        <ul>
+          <li>Statik sürtünmeyi her zaman μ<sub>s</sub>n almak (C3b'deki hata).</li>
+          <li>Eğik düzlemde n = mg yazmak.</li>
+          <li>Açılı çekişte F sin φ'nin n'yi azalttığını unutmak.</li>
+          <li>İp kopunca cismin "dışa doğru" uçtuğunu sanmak. Teğet boyunca düz gider (Q5.11).</li>
+        </ul>
+      </div>
+    </article>
+    <!-- Ders 4 -->
+    <article class="lesson" id="s-d4">
+      <div class="lesson-head">
+        <p class="eyebrow">Ders 4 · Bölüm 6 · B2 ve 11 clicker</p>
+        <h2>İş ve kinetik enerji</h2>
+      </div>
+      <div class="formulas">
+        <div class="f"><span class="eq">W = Fs cos φ</span><span class="lbl">sabit kuvvet; φ kuvvet ile yer değiştirme arası. Birim J</span></div>
+        <div class="f"><span class="eq">K = ½mv²</span><span class="lbl">hız 2 kat → K 4 kat</span></div>
+        <div class="f"><span class="eq">W<sub>tot</sub> = ΔK = K₂ − K₁</span><span class="lbl">iş-enerji teoremi</span></div>
+        <div class="f"><span class="eq">W<sub>yay</sub> = ½kx²</span><span class="lbl">F = kx; değişken kuvvette iş = F–x altındaki alan</span></div>
+        <div class="f"><span class="eq">P = W/t = Fv</span><span class="lbl">güç, W (watt). P sabitse v arttıkça F azalır (Q6.11)</span></div>
+      </div>
+      <div class="prose">
+        <p><b>İşin işareti:</b> kuvvet hareketle aynı yöndeyse +, ters yöndeyse −, dikse 0. Normal kuvvet ve yatay giden cisimde yerçekimi iş yapmaz (Q6.7, Q6.9). Kinetik sürtünmenin işi negatif.</p>
+        <p><b>Toplam iş = ΔK</b> kısa yolu, clicker'da çok çıkıyor:</p>
+        <ul>
+          <li>Sabit hız → ΔK = 0 → toplam iş 0 (Q6.4).</li>
+          <li>Durgun başlayıp durgun biterse toplam iş 0 (Q6.6).</li>
+          <li>Aynı kuvvet, aynı yol → aynı iş → aynı K, kütle fark etmez (Q6.3).</li>
+          <li>Aynı hızla giden bağlı cisimlerde toplam iş kütleyle orantılı (Q6.8, Q6.10).</li>
+          <li>Net kuvvet hıza hep dikse (düzgün dairesel) K ve sürat sabit, hız vektörü değişir (Q6.5).</li>
+        </ul>
+      </div>
+      <details class="ex">
+        <summary>Çözümlü örnek 1: fren mesafesi</summary>
+        <div class="body">
+          <p>1200 kg araba 20.0 m/s ile gidiyor, frene basınca tekerlekler kayıyor, μ<sub>k</sub> = 0.700. Duruş mesafesi?</p>
+          <p class="step">W<sub>sürtünme</sub> = −μ<sub>k</sub>mg·d = 0 − ½mv₀²</p>
+          <p class="step">d = v₀²/(2μ<sub>k</sub>g) = 400/13.72 = 29.2 m</p>
+          <p class="muted small">Kütle sadeleşir. Hız 2 katına çıkarsa mesafe 4 katına çıkar.</p>
+        </div>
+      </details>
+      <details class="ex">
+        <summary>Çözümlü örnek 2: açılı çekişte iş</summary>
+        <div class="body">
+          <p>Kutu yatayla 30.0° açı yapan 50.0 N kuvvetle 5.00 m çekiliyor. Kuvvetin işi?</p>
+          <p class="step">W = Fs cos φ = 50.0 × 5.00 × cos 30.0° = 217 J</p>
+        </div>
+      </details>
+    </article>
+    <!-- Ders 5 -->
+    <article class="lesson" id="s-d5">
+      <div class="lesson-head">
+        <p class="eyebrow">Ders 5 · Bölüm 7 · bu hafta işlendi, vizede olup olmadığı belirsiz</p>
+        <h2>Potansiyel enerji ve enerji korunumu</h2>
+      </div>
+      <p class="note">Clicker desteleri Bölüm 6'da bitiyor, bu yüzden Bölüm 7'yi en sona bıraktım. Hocaya ya da sınıf grubuna "Bölüm 7 vizede var mı?" diye sor. Varsa buradaki notu ve listelerdeki Bölüm 7 sorularını Perşembe akşamı çalış.</p>
+      <div class="formulas">
+        <div class="f"><span class="eq">U<sub>grav</sub> = mgy</span><span class="lbl">sadece fark önemli; sıfır noktasını sen seçersin</span></div>
+        <div class="f"><span class="eq">U<sub>el</sub> = ½kx²</span><span class="lbl">x yayın serbest boyundan uzama/sıkışma</span></div>
+        <div class="f"><span class="eq">K₁ + U₁ + W<sub>diğer</sub> = K₂ + U₂</span><span class="lbl">W_diğer: sürtünme, itme gibi korunumsuz kuvvetler</span></div>
+        <div class="f"><span class="eq">ΔU<sub>iç</sub> = −W<sub>sürtünme</sub> = f<sub>k</sub>d</span><span class="lbl">sürtünmenin "kaybettirdiği" enerji iç enerji olur</span></div>
+        <div class="f"><span class="eq">F<sub>x</sub> = −dU/dx</span><span class="lbl">U–x grafiğinin eğiminin tersi; minimum = kararlı denge</span></div>
+      </div>
+      <div class="prose">
+        <ul>
+          <li><b>Korunumlu kuvvet</b> (yerçekimi, yay): işi sadece başlangıç ve bitişe bağlı, kapalı yolda iş 0, U tanımlanabilir.</li>
+          <li><b>Korunumsuz</b> (sürtünme): işi yola bağlı, enerjiyi geri vermez.</li>
+          <li>Sürtünmesiz rampada son hız sadece yüksekliğe bağlı: <span class="math">v = √(2gh)</span>. Atış açısı fark etmez (7.5).</li>
+          <li>Hız gereken ama kuvvet ya da zaman sorulmayan problemlerde Newton yerine enerji kullan. Daha kısa.</li>
+        </ul>
+      </div>
+      <details class="ex">
+        <summary>Çözümlü örnek: yaya düşen kitap (7.21 tipi)</summary>
+        <div class="body">
+          <p>1.20 kg kitap, k = 1600 N/m yayın 0.800 m üstünden bırakılıyor. Maksimum sıkışma?</p>
+          <p class="step">En alt noktada K = 0: mg(h + x) = ½kx²</p>
+          <p class="step">800x² − 11.76x − 9.408 = 0 → x = 0.116 m</p>
+          <p class="muted small">Tuzak: kitap yaya değdikten sonra da x kadar daha alçalır; yükseklik h + x.</p>
+        </div>
+      </details>
+    </article>
+
+  </section>
+
+  <!-- ===================== PLAN ===================== -->
+  <section class="view" id="v-plan" hidden>
+    <div class="lesson-head">
+      <p class="eyebrow">9–14 Kasım fizik · 15–22 Kasım diğer vizeler</p>
+      <h2>Çalışma planı</h2>
+    </div>
+    <div class="prose"><p>Cumartesi'ye kadar öncelik fizik. Diğer derslerin vize tarihlerini aşağıya girersen geri sayım çıkar; bana yazarsan 15–22 Kasım'ı gün gün dağıtırım.</p></div>
+    <div class="dates" id="dates"></div>
+    <div class="rules">
+      <div class="rule"><b>Kural 1</b>Clicker'ları önce slayttan kendin cevapla, sonra burada kontrol et. Yanlışları "Yanlışlarım" filtresiyle tekrar et.</div>
+      <div class="rule"><b>Kural 2</b>Part C için her problemde önce FBD çiz. Çizmeden denklem yazma.</div>
+      <div class="rule"><b>Kural 3</b>Cuma akşamı yeni konu yok: formül kâğıdı, yanlış listesi, erken uyku.</div>
+    </div>
+    <div class="progress"><span class="score" id="pscore">0 / 0 görev</span><div class="bar"><i id="pbar"></i></div></div>
+    <div class="days" id="days"></div>
+  </section>
+
+
+  <!-- ===================== UDEMY ===================== -->
+  <section class="view" id="v-udemy" hidden>
+    <div class="lesson-head">
+      <p class="eyebrow">Pekiştirme · ana kaynak değil</p>
+      <h2>Udemy Pro'yu nasıl kullanacaksın</h2>
+    </div>
+    <div class="prose">
+      <p>Konuyu bu sayfadan öğren. Udemy'yi üç iş için kullan: anlamadığın yerin kısa videosu, kodlama alıştırması ve deneme sınavı. Kursun tamamını izleme. O günün konusuna denk gelen 1–2 dersi 1.25× hızla izle. Günde en fazla 30 dk.</p>
+      <p>Linkler Udemy aramasını açar. Kurs seçerken 4.5+ puan, çok yorum ve son bir yılda güncellenmiş olmasına bak.</p>
+    </div>
+    <div class="ucards">
+      <div class="ucard c-ns">
+        <h3>NS102 Physics</h3>
+        <ul>
+          <li>Calculus-based physics / mechanics kursunda sadece şu bölümler: friction, inclined plane, circular motion dynamics, work-energy theorem.</li>
+          <li>Part C'nin üç sorusu da Bölüm 5'ten. Videoda gördüğün her örnek için önce FBD'yi kendin çiz, sonra izlemeye devam et.</li>
+          <li>Ek soru pratiği: Mastering'deki ödev soruları.</li>
+        </ul>
+        <div class="links">
+          <a href="https://www.udemy.com/courses/search/?q=friction%20inclined%20plane%20physics" target="_blank" rel="noopener">friction inclined plane</a>
+          <a href="https://www.udemy.com/courses/search/?q=circular%20motion%20dynamics" target="_blank" rel="noopener">circular motion</a>
+          <a href="https://www.udemy.com/courses/search/?q=work%20energy%20theorem" target="_blank" rel="noopener">work energy theorem</a>
+          <a href="https://www.udemy.com/courses/search/?q=newton%27s%20laws%20free%20body%20diagram" target="_blank" rel="noopener">free body diagram</a>
+        </div>
+      </div>
+      <div class="ucard c-cs">
+        <h3>CS103 Introduction to Programming (C++)</h3>
+        <ul>
+          <li>Bir C++ başlangıç kursunda şu bölümler: değişkenler, if/switch, döngüler, fonksiyonlar, diziler.</li>
+          <li>Bölüm sonlarındaki coding exercise'ları tarayıcıda çöz.</li>
+        </ul>
+        <div class="links">
+          <a href="https://www.udemy.com/courses/search/?q=c%2B%2B%20beginner" target="_blank" rel="noopener">c++ beginner</a>
+          <a href="https://www.udemy.com/courses/search/?q=c%2B%2B%20practice%20exercises" target="_blank" rel="noopener">c++ practice exercises</a>
+        </div>
+      </div>
+      <div class="ucard c-math">
+        <h3>MATH101 Calculus I</h3>
+        <ul>
+          <li>Limit, süreklilik ve türev kuralları bölümleri; her alt konudan sonra kursun quiz'i.</li>
+          <li>Notlar: ders slaytları ve quiz soruları.</li>
+        </ul>
+        <div class="links">
+          <a href="https://www.udemy.com/courses/search/?q=calculus%201" target="_blank" rel="noopener">calculus 1</a>
+          <a href="https://www.udemy.com/courses/search/?q=limits%20and%20continuity" target="_blank" rel="noopener">limits and continuity</a>
+          <a href="https://www.udemy.com/courses/search/?q=derivatives%20calculus" target="_blank" rel="noopener">derivatives</a>
+        </div>
+      </div>
+      <div class="ucard c-elit">
+        <h3>ELIT100 Academic English</h3>
+        <ul><li>Academic writing kursunda paragraf yapısı ve bağlaçlar.</li></ul>
+        <div class="links"><a href="https://www.udemy.com/courses/search/?q=academic%20writing%20paragraph" target="_blank" rel="noopener">academic writing paragraph</a></div>
+      </div>
+      <div class="ucard c-ens">
+        <h3>ENS101 Introduction to Engineering</h3>
+        <ul><li>Konu listesi bende yok. Slaytları gönderirsen fizikteki gibi not hazırlarım.</li></ul>
+        <div class="links"><a href="https://www.udemy.com/courses/search/?q=introduction%20to%20engineering" target="_blank" rel="noopener">introduction to engineering</a></div>
+      </div>
+    </div>
+  </section>
+
+
+  <p class="foot">Kaynaklar: NS102 geçen yılın vize kâğıdı, YF15e Ch01–06 clicker desteleri, Young &amp; Freedman University Physics 15e (Global Edition) bölüm sonu soruları. Kitap ve slayt metinleri kopyalanmadı: problemler yeni sayılarla, kavramsal sorular kendi cümlelerimle yazıldı. Bütün sayısal cevaplar Python ile hesaplandı.</p>
+</div>
+
+<script>
+'use strict';
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('vk3-' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('vk3-' + k, JSON.stringify(v)); } catch (e) {} }
+};
+const DAY = 86400000;
+const startOf = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+const today = startOf(new Date());
+const fmtDate = d => d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+
+// ---------- countdown ----------
+(function () {
+  const exam = new Date(2026, 10, 14);
+  const n = Math.round((exam - today) / DAY);
+  const N = document.getElementById('countN'), S = document.getElementById('countSub');
+  if (n > 1) N.textContent = n + ' gün';
+  else if (n === 1) { N.textContent = 'yarın'; }
+  else if (n === 0) { N.textContent = 'bugün'; S.textContent = 'Başarılar'; }
+  else { N.textContent = 'bitti'; S.textContent = 'Finaller 16–24 Ocak'; }
+})();
+
+
+
+// ---------- tabs ----------
+const VIEWS = ['soru', 'sinav', 'dersler', 'plan', 'udemy'];
+function show() {
+  const h = location.hash.replace('#', '');
+  const v = VIEWS.includes(h) ? h : 'soru';
+  VIEWS.forEach(x => { document.getElementById('v-' + x).hidden = x !== v; });
+  document.querySelectorAll('.tabs a').forEach(a => a.setAttribute('aria-current', a.dataset.view === v ? 'page' : 'false'));
+}
+window.addEventListener('hashchange', show); show();
+document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById(b.dataset.go).scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+}));
+
+// ---------- data ----------
+const BANK_C = [{"id": "C2.19", "ref": "2.19", "ch": 2, "lvl": 2, "title": "Accelerating antelope", "text": "An antelope with constant acceleration runs between two posts 80.0 m apart in 7.00 s. As it passes the second post its speed is 16.0 m/s. Find (a) its speed at the first post and (b) its acceleration.", "parts": [{"l": "(a) v₁", "u": "m/s", "a": 6.857142857142858}, {"l": "(b) a", "u": "m/s²", "a": 1.3061224489795917}], "sol": ["x = ½(v₁ + v₂)t → v₁ = 2x/t − v₂ = 6.86 m/s", "a = (v₂ − v₁)/t = 1.31 m/s²"], "star": false}, {"id": "C2.31", "ref": "2.31", "ch": 2, "lvl": 2, "title": "Jumping flea", "text": "A flea jumps straight up and reaches a maximum height of 0.380 m. (a) What is its speed as it leaves the ground? (b) How long is it in the air?", "parts": [{"l": "(a) v₀", "u": "m/s", "a": 2.72910241654651}, {"l": "(b) t", "u": "s", "a": 0.5569596768462265}], "sol": ["v₀ = √(2gh) = 2.73 m/s", "t = 2v₀/g = 0.557 s"], "star": false}, {"id": "C2.32", "ref": "2.32", "ch": 2, "lvl": 2, "title": "Rock thrown up from a roof", "text": "A rock is thrown straight up at 18.0 m/s from the edge of a 25.0-m-tall roof and falls past the roof to the street. Ignore air resistance. Find (a) its speed just before it hits the street and (b) the total time of flight.", "parts": [{"l": "(a) v", "u": "m/s", "a": 28.53068523537421}, {"l": "(b) t", "u": "s", "a": 4.748029105650429}], "sol": ["v² = v₀² + 2gH → v = 28.5 m/s", "t = (v₀ + v)/g = 4.75 s (yukarı +, son hız aşağı)"], "star": false}, {"id": "C2.38", "ref": "2.38", "ch": 2, "lvl": 2, "title": "Dropped brick", "text": "A brick is dropped from rest from a roof and hits the ground 2.20 s later. Find (a) the height of the roof and (b) the brick's speed just before impact.", "parts": [{"l": "(a) h", "u": "m", "a": 23.716000000000005}, {"l": "(b) v", "u": "m/s", "a": 21.560000000000002}], "sol": ["h = ½gt² = 23.7 m", "v = gt = 21.6 m/s"], "star": false}, {"id": "C2.43", "ref": "2.43", "ch": 2, "lvl": 1, "title": "Round trip to the hand", "text": "You throw a rock straight up and catch it 4.00 s later at the same height. What maximum height above your hand did it reach?", "parts": [{"l": "h", "u": "m", "a": 19.6}], "sol": ["Çıkış süresi t/2 = 2.00 s", "h = ½g(t/2)² = 19.6 m"], "star": false}, {"id": "C2.47", "ref": "2.47", "ch": 2, "lvl": 2, "title": "Rock from a bridge", "text": "You throw a rock straight up from a bridge. It passes your hand on the way down 5.00 s after the throw. How fast is it moving when it reaches the water 22.0 m below your hand?", "parts": [{"l": "v", "u": "m/s", "a": 32.11619529147249}], "sol": ["Elin hizasına dönüş t = 2v₀/g → v₀ = 24.5 m/s", "v² = v₀² + 2gd → v = 32.1 m/s"], "star": false}, {"id": "C3.9", "ref": "3.9", "ch": 3, "lvl": 1, "title": "Book sliding off a table", "text": "A book slides off a horizontal table at 1.60 m/s and hits the floor 0.350 s later. Find (a) the table height, (b) the horizontal distance to the impact point, (c) the speed and (d) the angle below the horizontal just before impact.", "parts": [{"l": "(a) h", "u": "m", "a": 0.60025}, {"l": "(b) x", "u": "m", "a": 0.5599999999999999}, {"l": "(c) v", "u": "m/s", "a": 3.7848249629276123}, {"l": "(d) θ", "u": "°", "a": 64.99225189764243}], "sol": ["h = ½gt² = 0.600 m; x = v₀t = 0.560 m", "v_y = gt = 3.43 m/s → v = 3.78 m/s, θ = 65.0°"], "star": false}, {"id": "C3.12", "ref": "3.12", "ch": 3, "lvl": 1, "title": "Basketball shot", "text": "A ball is thrown with an upward velocity component of 9.0 m/s and a horizontal component of 11.0 m/s. Find (a) the time to the highest point, (b) the maximum height, (c) the time to return to the launch height and (d) the horizontal distance covered by then.", "parts": [{"l": "(a) t", "u": "s", "a": 0.9183673469387754}, {"l": "(b) H", "u": "m", "a": 4.13265306122449}, {"l": "(c) T", "u": "s", "a": 1.8367346938775508}, {"l": "(d) x", "u": "m", "a": 20.20408163265306}], "sol": ["t = v_y/g = 0.918 s, H = v_y²/2g = 4.13 m", "T = 2t = 1.84 s, x = vₓT = 20.2 m"], "star": false}, {"id": "C3.13", "ref": "3.13", "ch": 3, "lvl": 2, "title": "Car leaping a river", "text": "A car drives horizontally off a road 25.0 m above a river and must land on the far bank, which is 4.0 m above the river and 60.0 m away horizontally. Find (a) the minimum launch speed and (b) the speed on landing.", "parts": [{"l": "(a) v₀", "u": "m/s", "a": 28.982753492378876}, {"l": "(b) v", "u": "m/s", "a": 35.3779592401823}], "sol": ["Düşüş 21.0 m: t = √(2Δh/g) = 2.07 s", "v₀ = w/t = 29.0 m/s; v = √(v₀² + (gt)²) = 35.4 m/s"], "star": false}, {"id": "C3.16", "ref": "3.16", "ch": 3, "lvl": 1, "title": "Artillery shell", "text": "A shell is fired over level ground at 65.0 m/s, 50.0° above the horizontal. Find (a) the horizontal and (b) vertical velocity components, (c) the time to the top, (d) the maximum height and (e) the range.", "parts": [{"l": "(a) vₓ", "u": "m/s", "a": 41.781194629625055}, {"l": "(b) v_y", "u": "m/s", "a": 49.79288880273357}, {"l": "(c) t", "u": "s", "a": 5.080907020687099}, {"l": "(d) H", "u": "m", "a": 126.49651914905053}, {"l": "(e) R", "u": "m", "a": 424.5727302527121}], "sol": ["vₓ = v₀cos α = 41.8, v_y = v₀sin α = 49.8 m/s", "t = v_y/g = 5.08 s, H = 126 m, R = vₓ·2t = 425 m", "Tepede: v = (vₓ, 0), a = (0, −g)"], "star": false}, {"id": "C3.21", "ref": "3.21", "ch": 3, "lvl": 2, "title": "Throw from a rooftop", "text": "From the roof of an 18.0-m building you throw a rock at 28.0 m/s, 35.0° above the horizontal. Find (a) the maximum height above the roof, (b) the speed just before it hits the ground and (c) the horizontal distance from the building.", "parts": [{"l": "(a) H", "u": "m", "a": 13.15959713348662}, {"l": "(b) v", "u": "m/s", "a": 33.71646482061843}, {"l": "(c) x", "u": "m", "a": 95.42665849489867}], "sol": ["H = v_y²/2g = 13.2 m", "v = √(v₀² + 2gh) = 33.7 m/s", "−h = v_y t − ½gt² → t = 4.16 s, x = vₓt = 95.4 m"], "star": false}, {"id": "C3.22", "ref": "3.22", "ch": 3, "lvl": 2, "title": "Two times at one height", "text": "A rock is launched from the ground at 16.0 m/s, 55.0° above the horizontal. At what (a) earlier and (b) later time is it 6.00 m above the ground? (c) What is the magnitude of its vertical velocity at those times?", "parts": [{"l": "(a) t₁", "u": "s", "a": 0.586308448156445}, {"l": "(b) t₂", "u": "s", "a": 2.0884737372769973}, {"l": "(c) |v_y|", "u": "m/s", "a": 7.3606099166907075}], "sol": ["6.0 = v_y t − ½gt², v_y = 13.1 m/s", "t = (v_y ∓ √(v_y² − 2gy))/g → 0.586 s, 2.09 s", "|v_y| = √(v_y² − 2gy) = 7.36 m/s (önce +, sonra −)"], "star": false}, {"id": "C3.29", "ref": "3.29", "ch": 3, "lvl": 1, "title": "Pilot blackout (C2)", "text": "The bottom of a jet's dive is a circular arc of radius 320 m. The pilot blacks out at an upward acceleration of 6.0g. At what speed does this happen, in (a) m/s and (b) km/h?", "parts": [{"l": "(a) v", "u": "m/s", "a": 137.17142559585798}, {"l": "(b) v", "u": "km/h", "a": 493.81713214508875}], "sol": ["a = v²/R = 6.0g → v = √(6.0gR) = 137 m/s = 494 km/h", "Tuzak: v² = 2as değil! Dairesel hareket."], "star": true}, {"id": "C3.31", "ref": "3.31", "ch": 3, "lvl": 1, "title": "Ferris wheel", "text": "A Ferris wheel of radius 12.0 m turns so that a rider on the rim moves at a constant 6.50 m/s. Find (a) the magnitude of her acceleration and (b) the time for one revolution. (Direction: up at the bottom, down at the top.)", "parts": [{"l": "(a) a", "u": "m/s²", "a": 3.5208333333333335}, {"l": "(b) T", "u": "s", "a": 11.59972672094693}], "sol": ["a = v²/R = 3.52 m/s², merkeze doğru", "T = 2πR/v = 11.6 s"], "star": false}, {"id": "C3.35", "ref": "3.35", "ch": 3, "lvl": 1, "title": "Moving walkway", "text": "A moving walkway 40.0 m long moves at 1.2 m/s. A woman walks at 1.5 m/s relative to it. How long does she take to reach the other end walking (a) with the walkway and (b) against it?", "parts": [{"l": "(a) t", "u": "s", "a": 14.814814814814813}, {"l": "(b) t", "u": "s", "a": 133.33333333333331}], "sol": ["Yere göre hız 2.7 m/s → 14.8 s", "Ters yönde 0.3 m/s → 133 s"], "star": false}, {"id": "C3.41", "ref": "3.41", "ch": 3, "lvl": 1, "title": "Crossing a river I", "text": "A river flows south at 1.8 m/s and is 400 m wide. You point a boat due east and move at 4.5 m/s relative to the water. Find (a) your speed relative to the earth, (b) its angle south of east, (c) the crossing time and (d) how far south you land.", "parts": [{"l": "(a) v", "u": "m/s", "a": 4.846648326421054}, {"l": "(b) θ", "u": "°", "a": 21.80140948635181}, {"l": "(c) t", "u": "s", "a": 88.88888888888889}, {"l": "(d) d", "u": "m", "a": 160.0}], "sol": ["v = √(4.5² + 1.8²) = 4.85 m/s, tan θ = 1.8/4.5", "t = W/v_doğu = 88.9 s; d = 1.8 × t = 160 m"], "star": false}, {"id": "C3.42", "ref": "3.42", "ch": 3, "lvl": 1, "title": "Crossing a river II", "text": "Same river (1.8 m/s south, 400 m wide), same boat speed 4.5 m/s relative to the water. You want to land directly east of the start. Find (a) the heading angle north of east, (b) your speed relative to the earth and (c) the crossing time.", "parts": [{"l": "(a) θ", "u": "°", "a": 23.578178478201835}, {"l": "(b) v", "u": "m/s", "a": 4.124318125460256}, {"l": "(c) t", "u": "s", "a": 96.98572899377439}], "sol": ["sin θ = 1.8/4.5 → θ = 23.6°", "v = √(4.5² − 1.8²) = 4.12 m/s, t = 97.0 s"], "star": false}, {"id": "C3.43", "ref": "3.43", "ch": 3, "lvl": 2, "title": "Flying west in a crosswind", "text": "A pilot wants to fly due west. The wind blows toward the south at 60 km/h and the plane's airspeed is 280 km/h. Find (a) the heading angle north of west and (b) the ground speed.", "parts": [{"l": "(a) θ", "u": "°", "a": 12.373625116188558}, {"l": "(b) v", "u": "km/h", "a": 273.4958866235469}], "sol": ["sin θ = 60.0/280.0 → θ = 12.4°", "v = √(280.0² − 60.0²) = 273 km/h"], "star": false}, {"id": "C4.7", "ref": "4.7", "ch": 4, "lvl": 2, "title": "Skater stopped by friction", "text": "A 72.0 kg skater moving at 2.80 m/s slows uniformly to rest in 4.00 s because of friction. What is the friction force?", "parts": [{"l": "f", "u": "N", "a": 50.4}], "sol": ["a = 2.8/4.0 = 0.700 m/s²", "f = ma = 50.4 N"], "star": false}, {"id": "C4.8", "ref": "4.8", "ch": 4, "lvl": 2, "title": "Scale in an elevator", "text": "Your normal weight is 700 N. The elevator accelerates upward at 2.00 m/s². (a) What does the scale read? (b) What is the tension in a light string holding a 4.00 kg package?", "parts": [{"l": "(a) n", "u": "N", "a": 842.8571428571428}, {"l": "(b) T", "u": "N", "a": 47.2}], "sol": ["m = 700.0/9.8 = 71.4 kg; n = m(g + a) = 843 N", "T = m_p(g + a) = 47.2 N"], "star": false}, {"id": "C4.10", "ref": "4.10", "ch": 4, "lvl": 2, "title": "Pushing a block of ice", "text": "A worker pushes a block of ice on a frictionless floor with a constant horizontal 90.0 N force. Starting from rest it moves 12.0 m in 4.00 s. (a) What is its mass? (b) If the push stops then, how far does it move in the next 4.00 s?", "parts": [{"l": "(a) m", "u": "kg", "a": 60.0}, {"l": "(b) d", "u": "m", "a": 24.0}], "sol": ["x = ½at² → a = 1.50 m/s², m = F/a = 60.0 kg", "v = at = 6.00 m/s, sabit hız: d = vt = 24.0 m"], "star": false}, {"id": "C4.23", "ref": "4.23", "ch": 4, "lvl": 2, "title": "Boxes in contact", "text": "Boxes A (30.0 kg) and B (10.0 kg) touch on a frictionless floor. A 120 N horizontal force pushes A, which pushes B. What force does A exert on B?", "parts": [{"l": "F_AB", "u": "N", "a": 30.0}], "sol": ["a = F/(m_A + m_B) = 3.00 m/s²", "F_AB = m_B a = 30.0 N"], "star": false}, {"id": "C4.24", "ref": "4.24", "ch": 4, "lvl": 2, "title": "Elevator passenger", "text": "The floor pushes up with 600 N on a passenger who weighs 640 N. What is the passenger's acceleration (magnitude; direction is down)?", "parts": [{"l": "a", "u": "m/s²", "a": 0.6124999999999999}], "sol": ["Net 40 N aşağı, m = 65.3 kg", "a = 0.612 m/s² aşağı. Tepkiler: yolcunun zemine itmesi ve Dünya'yı çekmesi"], "star": false}, {"id": "C4.28", "ref": "4.28", "ch": 4, "lvl": 2, "title": "Bullet into wood", "text": "A 2.00 g bullet moving at 400 m/s penetrates 0.150 m into a tree. Assume a constant force. Find (a) the stopping time and (b) the force on the bullet.", "parts": [{"l": "(a) t", "u": "s", "a": 0.0007499999999999999}, {"l": "(b) F", "u": "N", "a": 1066.6666666666667}], "sol": ["a = v²/(2d) = 533333 m/s²", "t = v/a = 0.000750 s, F = ma = 1067 N"], "star": false}, {"id": "C4.30", "ref": "4.30", "ch": 4, "lvl": 2, "title": "Pushing a chair downward", "text": "You push a 15.0 kg chair with a 40.0 N force directed 35° below the horizontal. What normal force does the floor exert on it?", "parts": [{"l": "n", "u": "N", "a": 169.94305745404185}], "sol": ["Düşeyde denge: n = mg + F sin 35° = 170 N"], "star": false}, {"id": "C5.4", "ref": "5.4", "ch": 5, "lvl": 2, "title": "Traction frame (C1)", "text": "A 82.0 kg patient lies on a horizontal bed; the coefficient of static friction is 0.450. (a) What is the largest traction force along the spine that does not make the patient slide? (b) The force is applied to a neck collar by two symmetric cables, each at 60° to the line across the collar. What is the tension in each cable?", "parts": [{"l": "(a) F", "u": "N", "a": 361.62}, {"l": "(b) T", "u": "N", "a": 208.7814043443525}], "sol": ["F = μ_s n = μ_s mg = 362 N", "2T sin 60° = F → T = 209 N"], "star": true}, {"id": "C5.5", "ref": "5.5", "ch": 5, "lvl": 2, "title": "Picture on two wires", "text": "A picture hangs from two wires that make equal angles with the vertical. What angle makes the tension in each wire 0.80 of the picture's weight?", "parts": [{"l": "θ", "u": "°", "a": 51.31781254651057}], "sol": ["2T cos θ = w → cos θ = 1/(2 × 0.8) → θ = 51.3°"], "star": false}, {"id": "C5.6", "ref": "5.6", "ch": 5, "lvl": 2, "title": "Wrecking ball on two cables", "text": "A 3000 kg wrecking ball hangs at rest from two cables: cable B makes 35° with the vertical, cable A is horizontal. Find (a) T_B and (b) T_A.", "parts": [{"l": "(a) T_B", "u": "N", "a": 35890.77290958681}, {"l": "(b) T_A", "u": "N", "a": 20586.101623365466}], "sol": ["T_B cos 35° = mg → T_B = 35891 N", "T_A = T_B sin 35° = mg tan 35° = 20586 N"], "star": false}, {"id": "C5.10", "ref": "5.10", "ch": 5, "lvl": 2, "title": "Apparent weight", "text": "A 550 N student stands on a scale in an elevator; student plus elevator have mass 900 kg. (a) The scale reads 510 N: find the acceleration (negative = down). (b) It reads 720 N: find the acceleration. (c) Find the cable tension in case (a).", "parts": [{"l": "(a) a", "u": "m/s²", "a": -0.7127272727272728}, {"l": "(b) a", "u": "m/s²", "a": 3.0290909090909093}, {"l": "(c) T", "u": "N", "a": 8178.545454545455}], "sol": ["m = 56.1 kg; a = (n − w)/m = -0.713 m/s² (aşağı)", "(b) a = 3.03 m/s² (yukarı)", "T = M(g + a) = 8179 N. Tartı 0 → serbest düşüş"], "star": false}, {"id": "C5.12", "ref": "5.12", "ch": 5, "lvl": 2, "title": "Rocket and power supply", "text": "A 140 kg rocket has an engine thrust of 2000 N. A 20.0 N device rests on its floor. Find (a) the initial acceleration and (b) the force of the floor on the device.", "parts": [{"l": "(a) a", "u": "m/s²", "a": 4.485714285714286}, {"l": "(b) n", "u": "N", "a": 29.15451895043732}], "sol": ["a = F/m − g = 4.49 m/s²", "n = m_d(g + a) = 29.2 N"], "star": false}, {"id": "C5.15", "ref": "5.15", "ch": 5, "lvl": 2, "title": "Atwood machine", "text": "A 12.0 kg load and a 25.0 kg counterweight hang from the two ends of a rope over a frictionless pulley and are released. Find (a) the acceleration and (b) the tension.", "parts": [{"l": "(a) a", "u": "m/s²", "a": 3.4432432432432436}, {"l": "(b) T", "u": "N", "a": 158.91891891891893}], "sol": ["a = (m₂ − m₁)g/(m₁ + m₂) = 3.44 m/s²", "T = m₁(g + a) = 159 N (iki ağırlığın arasında)"], "star": false}, {"id": "C5.16", "ref": "5.16", "ch": 5, "lvl": 2, "title": "Ice block on a ramp", "text": "A 6.00 kg block of ice starts from rest at the top of a frictionless 1.50 m ramp and reaches 2.80 m/s at the bottom. (a) What is the ramp angle? (b) What would the final speed be with a 8.0 N friction force along the ramp?", "parts": [{"l": "(a) θ", "u": "°", "a": 15.466009953420548}, {"l": "(b) v", "u": "m/s", "a": 1.9595917942265422}], "sol": ["a = v²/2L = 2.61 = g sin θ → θ = 15.5°", "a' = a − f/m = 1.28, v = √(2a'L) = 1.96 m/s"], "star": false}, {"id": "C5.17", "ref": "5.17", "ch": 5, "lvl": 2, "title": "Table block and hanging block", "text": "A 5.00 kg block on a frictionless table is tied by a horizontal rope over a pulley to a hanging block of mass m. When released, the tension is 15.0 N. Find (a) the acceleration and (b) m.", "parts": [{"l": "(a) a", "u": "m/s²", "a": 3.0}, {"l": "(b) m", "u": "kg", "a": 2.205882352941176}], "sol": ["a = T/m_masa = 3.00 m/s²", "mg − T = ma → m = T/(g − a) = 2.21 kg"], "star": false}, {"id": "C5.25", "ref": "5.25", "ch": 5, "lvl": 2, "title": "Pushing a box", "text": "A worker pushes a 20.0 kg box at a constant 3.00 m/s; μ_k = 0.25. (a) What horizontal force is needed? (b) If the push is removed, how far does the box slide?", "parts": [{"l": "(a) F", "u": "N", "a": 49.0}, {"l": "(b) d", "u": "m", "a": 1.8367346938775508}], "sol": ["F = μ_k mg = 49.0 N", "d = v²/(2μ_k g) = 1.84 m"], "star": false}, {"id": "C5.26", "ref": "5.26", "ch": 5, "lvl": 2, "title": "Static vs kinetic friction", "text": "A 50 N box rests on a floor (μ_s = 0.45, μ_k = 0.25). Find the friction force (a) with no push, (b) with an 8 N push. (c) Minimum push to start it; (d) push to keep it at constant speed. (e) With a 20 N push, find the acceleration.", "parts": [{"l": "(a) f", "u": "N", "a": 0.0}, {"l": "(b) f", "u": "N", "a": 8.0}, {"l": "(c) F", "u": "N", "a": 22.5}, {"l": "(d) F", "u": "N", "a": 12.5}, {"l": "(e) a", "u": "m/s²", "a": 1.47}], "sol": ["(a) 0 (b) 8 N: statik sürtünme dengeden", "(c) μ_s w = 22.5 N (d) μ_k w = 12.5 N", "(e) a = (20.0 − 12.5)/(w/g) = 1.47 m/s²"], "star": false}, {"id": "C5.27", "ref": "5.27", "ch": 5, "lvl": 2, "title": "Measuring friction coefficients", "text": "A 42.0 kg crate starts to move when your push exceeds 350 N; afterward 240 N keeps it at constant speed. Find (a) μ_s, (b) μ_k and (c) the push needed for an acceleration of 1.20 m/s².", "parts": [{"l": "(a) μ_s", "u": "", "a": 0.8503401360544217}, {"l": "(b) μ_k", "u": "", "a": 0.5830903790087463}, {"l": "(c) F", "u": "N", "a": 290.4}], "sol": ["μ_s = 350.0/mg = 0.850, μ_k = 240.0/mg = 0.583", "F = f_k + ma = 290 N"], "star": false}, {"id": "C5.30", "ref": "5.30", "ch": 5, "lvl": 2, "title": "Rocks sliding up a hill", "text": "Rocks slide up a 38° slope (μ_k = 0.40, μ_s = 0.55). (a) What is the magnitude of their deceleration going up? (b) At the top they slide back down (tan 38° > μ_s). What is the acceleration going down?", "parts": [{"l": "(a) a", "u": "m/s²", "a": 9.122484612329801}, {"l": "(b) a", "u": "m/s²", "a": 2.9444803040531013}], "sol": ["Yukarı: g(sin θ + μ_k cos θ) = 9.12", "tan θ = 0.781 > μ_s → kayar; aşağı: g(sin θ − μ_k cos θ) = 2.94"], "star": false}, {"id": "C5.31", "ref": "5.31", "ch": 5, "lvl": 2, "title": "Pushing along a steep ramp", "text": "A 12.0 kg box is on a 50° ramp with μ_k = 0.25. You push it with 130 N parallel to the ramp. Find its acceleration when it is pushed and moving (a) down the ramp and (b) up the ramp.", "parts": [{"l": "(a) a", "u": "m/s²", "a": 16.765739232167295}, {"l": "(b) a", "u": "m/s²", "a": 1.7512681470353266}], "sol": ["Aşağı: (F + mg sin θ − μ_k mg cos θ)/m = 16.8", "Yukarı: (F − mg sin θ − μ_k mg cos θ)/m = 1.75"], "star": false}, {"id": "C5.33", "ref": "5.33", "ch": 5, "lvl": 2, "title": "Two stacked boxes down a ramp (C3)", "text": "Two boxes (lower 50.0 kg, upper 30.0 kg on top of it) are lowered at constant speed down a ramp by a rope parallel to the ramp. The ramp rises 2.60 m over 5.00 m horizontally; μ_k between ramp and lower box is 0.42; the boxes do not slip on each other. Find (a) the rope force and (b) the friction force on the upper box (direction: up the ramp).", "parts": [{"l": "(a) T", "u": "N", "a": 69.55779721679228}, {"l": "(b) f_s", "u": "N", "a": 135.63770457274492}], "sol": ["θ = arctan(2.6/5.0) = 27.47°", "T = Mg(sin θ − μ_k cos θ) = 69.6 N", "Üst kutu dengede: f_s = m g sin θ = 136 N (μ_s n değil!)"], "star": true}, {"id": "C5.34", "ref": "5.34", "ch": 5, "lvl": 2, "title": "Block on table, block hanging", "text": "Block A (50 N) on a table is tied over a pulley to hanging block B (30 N). Once moving, B descends at constant speed. (a) Find μ_k. (b) A 50 N cat sits on A; B is set moving downward again. Find the magnitude of its acceleration (it slows down).", "parts": [{"l": "(a) μ_k", "u": "", "a": 0.6}, {"l": "(b) a", "u": "m/s²", "a": 2.261538461538462}], "sol": ["Sabit hız: μ_k w_A = w_B → μ_k = 0.600", "Kediyle sürtünme 60.0 N > 30.0 N: a = 2.26 m/s², B yavaşlar"], "star": false}, {"id": "C5.35", "ref": "5.35", "ch": 5, "lvl": 2, "title": "Stopping distance", "text": "(a) With μ_k = 0.75, what is the shortest locked-wheel stopping distance from 30.0 m/s? (b) On wet road (μ_k = 0.30), what speed gives the same distance?", "parts": [{"l": "(a) d", "u": "m", "a": 61.224489795918366}, {"l": "(b) v", "u": "m/s", "a": 18.973665961010276}], "sol": ["d = v²/(2μ_k g) = 61.2 m", "v = √(2μ_k g d) = 19.0 m/s"], "star": false}, {"id": "C5.36", "ref": "5.36", "ch": 5, "lvl": 2, "title": "Box on a tilting ramp", "text": "A box sits on a ramp whose angle is slowly increased (μ_s = 0.40, μ_k = 0.28). (a) At what angle does it start to slip? (b) What is its acceleration then? (c) How fast is it moving after sliding 4.0 m?", "parts": [{"l": "(a) θ", "u": "°", "a": 21.80140948635181}, {"l": "(b) a", "u": "m/s²", "a": 1.0918885884810647}, {"l": "(c) v", "u": "m/s", "a": 2.955521731919513}], "sol": ["tan θ = μ_s → θ = 21.8°", "a = g(sin θ − μ_k cos θ) = 1.09 m/s², v = √(2aL) = 2.96 m/s"], "star": false}, {"id": "C5.39", "ref": "5.39", "ch": 5, "lvl": 2, "title": "Released from rest", "text": "Block A (2.50 kg) on a table (μ_k = 0.30) is tied over a pulley to hanging block B (2.00 kg). They are released from rest. Find (a) their speed after moving 4.00 cm and (b) the tension.", "parts": [{"l": "(a) v", "u": "m/s", "a": 0.4666666666666667}, {"l": "(b) T", "u": "N", "a": 14.155555555555557}], "sol": ["a = (m_B − μ_k m_A)g/(m_A + m_B) = 2.72 m/s²", "v = √(2ad) = 0.467 m/s, T = m_B(g − a) = 14.2 N"], "star": false}, {"id": "C5.43", "ref": "5.43", "ch": 5, "lvl": 1, "title": "Stone on a string", "text": "A 0.60 kg stone on a 0.80 m string moves in a horizontal circle on a frictionless table. The string breaks above 50 N. What is the maximum speed?", "parts": [{"l": "v", "u": "m/s", "a": 8.16496580927726}], "sol": ["T = mv²/r → v = √(Tr/m) = 8.16 m/s"], "star": false}, {"id": "C5.45", "ref": "5.45", "ch": 5, "lvl": 2, "title": "Car inside a vertical loop", "text": "A 1.40 kg toy car moves at a constant 10.0 m/s around the inside of a vertical circle of radius 4.00 m. Find the normal force (a) at the bottom and (b) at the top.", "parts": [{"l": "(a) n", "u": "N", "a": 48.71999999999999}, {"l": "(b) n", "u": "N", "a": 21.279999999999998}], "sol": ["v²/R = 25.0 m/s²", "Alt: n = m(g + v²/R) = 48.7 N; üst: n = m(v²/R − g) = 21.3 N"], "star": false}, {"id": "C5.46", "ref": "5.46", "ch": 5, "lvl": 2, "title": "Loop: top to bottom", "text": "A 0.900 kg car moves at constant speed inside a vertical circular track. At the top the normal force is 8.00 N. What is it at the bottom?", "parts": [{"l": "n", "u": "N", "a": 25.64}], "sol": ["Sabit hızda n_alt − n_üst = 2mg → 25.6 N"], "star": false}, {"id": "C5.48", "ref": "5.48", "ch": 5, "lvl": 1, "title": "Flat curve", "text": "A car takes a flat curve of radius 200 m at 25.0 m/s. (a) What minimum μ_s prevents sliding? (b) If μ_s is only one-third of that, what is the maximum safe speed?", "parts": [{"l": "(a) μ_s", "u": "", "a": 0.3188775510204081}, {"l": "(b) v", "u": "m/s", "a": 14.433756729740645}], "sol": ["μ_s = v²/(gR) = 0.319", "μ/3 → v/√3 = 14.4 m/s"], "star": false}, {"id": "C5.49", "ref": "5.49", "ch": 5, "lvl": 2, "title": "Banked curve", "text": "A curve of radius 250 m is to be banked so cars can take it at 90 km/h without friction. (a) What bank angle? (b) What normal force acts on a 1200 kg car?", "parts": [{"l": "(a) β", "u": "°", "a": 14.31104126260641}, {"l": "(b) n", "u": "N", "a": 12136.622264864307}], "sol": ["tan β = v²/(gR) = 0.255 → β = 14.3° (kütleden bağımsız)", "n = mg/cos β = 12137 N"], "star": false}, {"id": "C5.56", "ref": "5.56", "ch": 5, "lvl": 2, "title": "Pulling out of a dive", "text": "A 60.0 kg pilot pulls out of a vertical dive along a circle; at the bottom the speed is 100 m/s. (a) What minimum radius keeps the acceleration at or below 5.00g? (b) What is her apparent weight at the bottom?", "parts": [{"l": "(a) R", "u": "m", "a": 204.08163265306123}, {"l": "(b) n", "u": "N", "a": 3528.0}], "sol": ["R = v²/(5.0g) = 204 m", "n = m(g + 5.0g) = 3528 N"], "star": false}, {"id": "C5.57", "ref": "5.57", "ch": 5, "lvl": 1, "title": "Swinging a pail of water", "text": "You swing a pail of water in a vertical circle of radius 0.800 m. What minimum speed at the top keeps the water in?", "parts": [{"l": "v", "u": "m/s", "a": 2.8000000000000003}], "sol": ["Tepede sadece yerçekimi: mg = mv²/R → v = √(gR) = 2.80 m/s"], "star": false}, {"id": "C5.58", "ref": "5.58", "ch": 5, "lvl": 2, "title": "Pendulum at the bottom", "text": "A 70 N ball hangs from a 4.00 m rope and swings like a pendulum, moving at 4.50 m/s through the lowest point. Find (a) its acceleration (direction: up) and (b) the rope tension.", "parts": [{"l": "(a) a", "u": "m/s²", "a": 5.0625}, {"l": "(b) T", "u": "N", "a": 106.16071428571428}], "sol": ["a = v²/L = 5.06 m/s² yukarı", "T = m(g + a) = 106 N"], "star": false}, {"id": "C6.3", "ref": "6.3", "ch": 6, "lvl": 1, "title": "Pushing a crate at constant speed", "text": "A worker pushes a 35.0 kg crate 5.0 m across a level floor at constant speed with a horizontal force (μ_k = 0.30). Find (a) the force, (b) its work, (c) the work of friction and (d) the total work.", "parts": [{"l": "(a) F", "u": "N", "a": 102.9}, {"l": "(b) W_F", "u": "J", "a": 514.5}, {"l": "(c) W_f", "u": "J", "a": -514.5}, {"l": "(d) W_top", "u": "J", "a": 0.0}], "sol": ["F = μ_k mg = 103 N; W_F = Fd = 514 J", "W_f = −W_F; normal ve yerçekimi 0; toplam 0 (sabit hız)"], "star": false}, {"id": "C6.4", "ref": "6.4", "ch": 6, "lvl": 2, "title": "Pushing at an angle below horizontal", "text": "Same crate (35.0 kg, μ_k = 0.30, 5.0 m, constant speed), but the push is 25° below the horizontal. Find (a) the force and (b) its work.", "parts": [{"l": "(a) F", "u": "N", "a": 132.00391942098454}, {"l": "(b) W_F", "u": "J", "a": 598.1809004529838}], "sol": ["F cos θ = μ_k(mg + F sin θ) → F = 132 N", "W_F = F cos θ · d = 598 J; W_f = −598 J; toplam 0"], "star": false}, {"id": "C6.10", "ref": "6.10", "ch": 6, "lvl": 2, "title": "Package down a chute", "text": "A 15.0 kg package slides 2.50 m down a chute inclined 50° below the horizontal (μ_k = 0.35). Find the work done by (a) friction and (b) gravity, and (c) the net work.", "parts": [{"l": "(a) W_f", "u": "J", "a": -82.67855629593112}, {"l": "(b) W_g", "u": "J", "a": 281.5213328462244}, {"l": "(c) W_net", "u": "J", "a": 198.8427765502933}], "sol": ["n = mg cos θ = 94.5 N; W_f = −μ_k n d = -82.7 J", "W_g = mgd sin θ = 282 J; W_n = 0; net 199 J"], "star": false}, {"id": "C6.12", "ref": "6.12", "ch": 6, "lvl": 2, "title": "Carried up a conveyor belt", "text": "A 10.0 kg box rides 6.00 m up a conveyor belt inclined at 30°, at constant speed, held by friction. Find the work done by (a) friction and (b) gravity.", "parts": [{"l": "(a) W_f", "u": "J", "a": 293.99999999999994}, {"l": "(b) W_g", "u": "J", "a": -293.99999999999994}], "sol": ["Statik sürtünme yukarı = mg sin θ; W_f = +294 J", "W_g = −294 J; W_n = 0"], "star": false}, {"id": "C6.16", "ref": "6.16", "ch": 6, "lvl": 2, "title": "Sliding book", "text": "A 2.00 kg book slides on a rough table: 3.50 m/s at A, 1.50 m/s at B. (a) Total work from A to B? (b) Speed at C if a further −1.00 J of work is done from B to C? (c) Speed at C if instead +1.00 J were done?", "parts": [{"l": "(a) W", "u": "J", "a": -10.0}, {"l": "(b) v_C", "u": "m/s", "a": 1.118033988749895}, {"l": "(c) v_C", "u": "m/s", "a": 1.8027756377319946}], "sol": ["W = ΔK = -10.0 J", "K_B = 2.25 J → K_C = K_B ∓ 1.0: v = 1.12 ve 1.80 m/s"], "star": false}, {"id": "C6.24", "ref": "6.24", "ch": 6, "lvl": 2, "title": "Rock thrown upward (energy)", "text": "A 4.00 N rock thrown straight up is moving upward at 20.0 m/s when 12.0 m above the ground. Using the work–energy theorem, find (a) its launch speed and (b) its maximum height.", "parts": [{"l": "(a) v₀", "u": "m/s", "a": 25.203174403237384}, {"l": "(b) h", "u": "m", "a": 32.40816326530612}], "sol": ["−mg·h = ½mv² − ½mv₀² → v₀ = 25.2 m/s", "h_max = v₀²/2g = 32.4 m"], "star": false}, {"id": "C6.28", "ref": "6.28", "ch": 6, "lvl": 2, "title": "Ice down a frictionless incline", "text": "A 3.00 kg block of ice starts from rest and slides 1.80 m down a frictionless incline at 30°. What is its final speed?", "parts": [{"l": "v", "u": "m/s", "a": 4.199999999999999}], "sol": ["W_g = mgd sin θ = ½mv² → v = 4.20 m/s"], "star": false}, {"id": "C6.29", "ref": "6.29", "ch": 6, "lvl": 1, "title": "Kinetic energy ratios", "text": "Object A has 32 J of kinetic energy; B has one-quarter of A's mass and also 32 J. (a) v_B/v_A = ? (b) If −24 J of total work is done on each, by what factor does each speed change?", "parts": [{"l": "(a) v_B/v_A", "u": "", "a": 2.0}, {"l": "(b) faktör", "u": "", "a": 0.5}], "sol": ["K = ½mv², m_B = m_A/4 → v_B = 2v_A", "K: 32 → 8 J, hız √(8/32) = 0.500 katına iner"], "star": false}, {"id": "C6.32", "ref": "6.32", "ch": 6, "lvl": 2, "title": "Stretching a spring", "text": "It takes 16.0 J of work to stretch a spring 8.00 cm. Find (a) k, (b) the force at that stretch, (c) the work to compress it 5.00 cm and (d) the force needed then.", "parts": [{"l": "(a) k", "u": "N/m", "a": 5000.0}, {"l": "(b) F", "u": "N", "a": 400.0}, {"l": "(c) W", "u": "J", "a": 6.25}, {"l": "(d) F", "u": "N", "a": 250.0}], "sol": ["W = ½kx² → k = 5000 N/m; F = kx = 400 N", "W = ½k(0.05)² = 6.25 J, F = 250 N"], "star": false}, {"id": "C6.37", "ref": "6.37", "ch": 6, "lvl": 2, "title": "Box hits a spring", "text": "A 5.0 kg box moving at 2.5 m/s on a frictionless floor runs into a spring with k = 60 N/cm. What is the maximum compression?", "parts": [{"l": "x", "u": "cm", "a": 7.216878364870323}], "sol": ["k = 6000 N/m; ½mv² = ½kx² → x = v√(m/k) = 7.22 cm"], "star": false}, {"id": "C6.40", "ref": "6.40", "ch": 6, "lvl": 1, "title": "Spring launcher", "text": "A 4.00 kg block is pushed against a spring (k = 300 N/m) compressed 0.025 m and released on a frictionless floor. Find (a) the spring's work and (b) the block's final speed.", "parts": [{"l": "(a) W", "u": "J", "a": 0.09375}, {"l": "(b) v", "u": "m/s", "a": 0.21650635094610965}], "sol": ["W = ½kx² = 0.0938 J", "v = √(2W/m) = 0.217 m/s"], "star": false}, {"id": "C6.50", "ref": "6.50", "ch": 6, "lvl": 2, "title": "Average power of friction", "text": "A 25.0 kg rock slides at 6.00 m/s on rough ground (μ_k = 0.25) until it stops. What average power does friction deliver?", "parts": [{"l": "P", "u": "W", "a": 183.75000000000003}], "sol": ["K = 450 J; t = v/(μ_k g) = 2.45 s", "P = K/t = 184 W"], "star": false}, {"id": "C6.54", "ref": "6.54", "ch": 6, "lvl": 2, "title": "Elevator motor", "text": "An elevator (500 kg empty) must rise 24.0 m at constant speed in 20.0 s; the motor provides at most 25 kW. How many 70 kg passengers can ride? (round down)", "parts": [{"l": "N", "u": "kişi", "a": 23}], "sol": ["v = 1.20 m/s; F = P/v = 20833 N", "Toplam kütle 2126 kg → (2126 − 500)/70 = 23.2 → 23"], "star": false}, {"id": "C7.5", "ref": "7.5", "ch": 7, "lvl": 1, "title": "Speed from energy", "text": "A ball is thrown at 12.0 m/s from a 24.0 m roof. Using energy, find its speed just before hitting the ground. (Does the launch angle matter?)", "parts": [{"l": "v", "u": "m/s", "a": 24.78709341572747}], "sol": ["½mv² = ½mv₀² + mgh → v = 24.8 m/s", "Açıdan bağımsız (hava direnci yoksa)"], "star": false}, {"id": "C7.10", "ref": "7.10", "ch": 7, "lvl": 2, "title": "Swing", "text": "A 30.0 kg child on a swing with 2.50 m ropes is released from rest at 40° from the vertical. Find (a) her potential energy relative to the bottom and (b) her speed at the bottom.", "parts": [{"l": "(a) U", "u": "J", "a": 171.95733430755118}, {"l": "(b) v", "u": "m/s", "a": 3.385826677071654}], "sol": ["Δh = L(1 − cos θ) = 0.585 m; U = mgΔh = 172 J", "v = √(2gΔh) = 3.39 m/s; gerilmenin işi 0"], "star": false}, {"id": "C7.15", "ref": "7.15", "ch": 7, "lvl": 2, "title": "Spring potential energy", "text": "A force of 800 N stretches a spring 0.080 m. Find its potential energy (a) at that stretch and (b) when compressed 0.040 m.", "parts": [{"l": "(a) U", "u": "J", "a": 32.0}, {"l": "(b) U", "u": "J", "a": 8.0}], "sol": ["k = F/x = 10000 N/m", "U = ½kx²: 32.0 J ve 8.00 J"], "star": false}, {"id": "C7.21", "ref": "7.21", "ch": 7, "lvl": 2, "title": "Book dropped on a spring", "text": "A spring has k = 1500 N/m. (a) How far must it be compressed to store 4.00 J? (b) A 1.50 kg book is dropped onto the vertical spring from 0.600 m above its top. Find the maximum compression.", "parts": [{"l": "(a) x", "u": "m", "a": 0.07302967433402215}, {"l": "(b) x", "u": "m", "a": 0.11868544438996426}], "sol": ["x = √(2U/k) = 0.0730 m", "mg(h + x) = ½kx² → x = 0.119 m"], "star": false}, {"id": "C7.24", "ref": "7.24", "ch": 7, "lvl": 2, "title": "Spring with friction", "text": "A 3.00 kg block attached to a spring (k = 900 N/m) compressed 0.040 m is released on a floor with μ_k = 0.35. What is its speed after moving 0.025 m?", "parts": [{"l": "v", "u": "m/s", "a": 0.4909175083453431}], "sol": ["½k(x₁² − x₂²) − μ_k mg d = ½mv², x₂ = 0.015 m", "v = 0.491 m/s"], "star": false}, {"id": "C7.29", "ref": "7.29", "ch": 7, "lvl": 2, "title": "Skier over a rough patch", "text": "A 60.0 kg skier moving at 7.00 m/s crosses a rough patch 5.00 m long (μ_k = 0.25), then skis down a frictionless 3.00 m hill. Find (a) her speed at the bottom and (b) the internal energy produced on the patch.", "parts": [{"l": "(a) v", "u": "m/s", "a": 9.126883367283709}, {"l": "(b) ΔU_iç", "u": "J", "a": 735.0}], "sol": ["Yamadan sonra v₁² = v₀² − 2μ_k gL = 24.5", "v = √(v₁² + 2gh) = 9.13 m/s; iç enerji μ_k mgL = 735 J"], "star": false}, {"id": "C7.30", "ref": "7.30", "ch": 7, "lvl": 1, "title": "Toolbox sliding off a roof", "text": "A 90 N toolbox starts from rest and slides 5.00 m down a roof inclined at 40°; the friction force is 25 N. How fast is it moving at the edge?", "parts": [{"l": "v", "u": "m/s", "a": 5.9808831728314695}], "sol": ["(w sin θ − f)d = ½mv², m = 9.18 kg", "v = 5.98 m/s"], "star": false}];
+const BANK_B = [{"id": "BQ2.1", "ref": "Q2.1", "ch": 2, "q": "Does a car's speedometer show speed or velocity? Why?", "a": "Sürat (büyüklük). Yön göstermediği için hız vektörünü ölçmez.", "star": false}, {"id": "BQ2.3", "ref": "Q2.3", "ch": 2, "q": "With constant acceleration, can an object reverse its direction of motion once? Twice? Explain.", "a": "Bir kez evet (yukarı atılan top). İki kez hayır: sabit a ile v doğrusal değişir, sıfırdan sadece bir kez geçer.", "star": false}, {"id": "BQ2.4", "ref": "Q2.4", "ch": 2, "q": "When is the average velocity over an interval equal to the instantaneous velocity?", "a": "Hız sabitken (ivme sıfır).", "star": false}, {"id": "BQ2.5", "ref": "Q2.5", "ch": 2, "q": "Can an object (a) slow down while the magnitude of its acceleration grows, (b) speed up while its acceleration shrinks?", "a": "(a) Evet: v ile a zıt yönde ve |a| büyüyor. (b) Evet: v ile a aynı yönde ama |a| küçülüyor; yine hızlanıyor.", "star": false}, {"id": "BQ2.6", "ref": "Q2.6", "ch": 2, "q": "When is the magnitude of the average velocity equal to the average speed?", "a": "Cisim düz çizgide yön değiştirmeden giderse (yol = |yer değiştirme|).", "star": false}, {"id": "BQ2.7", "ref": "Q2.7", "ch": 2, "q": "Two cars swap positions in the same time interval (each ends where the other started). How do their average velocities compare?", "a": "Eşit büyüklükte, zıt yönde: yer değiştirmeleri zıt.", "star": false}, {"id": "BQ2.9", "ref": "Q2.9", "ch": 2, "q": "Can an object have zero displacement but nonzero average velocity? Zero displacement but nonzero velocity at some instant?", "a": "Ortalama hız Δx/Δt = 0 olmak zorunda. Anlık hız sıfırdan farklı olabilir (gidip dönen cisim).", "star": false}, {"id": "BQ2.10", "ref": "Q2.10", "ch": 2, "q": "Can an object have zero acceleration and nonzero velocity? Sketch v–t.", "a": "Evet: sabit hız; v–t grafiği yatay çizgi.", "star": false}, {"id": "BQ2.11", "ref": "Q2.11", "ch": 2, "q": "Can an object have zero velocity but nonzero acceleration? Give an example.", "a": "Evet: yukarı atılan top tepede v = 0, a = g.", "star": false}, {"id": "BQ2.12", "ref": "Q2.12", "ch": 2, "q": "A car moves west. Can its acceleration point east? When?", "a": "Evet: batıya giderken yavaşlıyorsa.", "star": false}, {"id": "BQ2.14", "ref": "Q2.14", "ch": 2, "q": "Is \"average velocity = (v₀ + v)/2\" still true if the acceleration is not constant?", "a": "Hayır, sadece sabit ivmede doğru.", "star": false}, {"id": "BQ2.15", "ref": "Q2.15", "ch": 2, "q": "You throw a ball high in the air. Is its acceleration larger while you are throwing it or after it leaves your hand?", "a": "Atılırken: kısa sürede büyük hıza çıkıyor, a ≫ g. Elden çıkınca a = g.", "star": false}, {"id": "BQ2.16", "ref": "Q2.16", "ch": 2, "q": "Show that (a) a ball thrown straight up returns to the release point with its launch speed and (b) its flight time is twice its rise time.", "a": "v² = v₀² − 2g(y − y₀): aynı yükseklikte sürat v₀. Çıkış v₀/g, iniş v₀/g → toplam 2v₀/g.", "star": false}, {"id": "BQ2.17", "ref": "Q2.17", "ch": 2, "q": "A faucet releases a drop every 1.0 s. As the drops fall, does the distance between neighbouring drops grow, shrink or stay the same?", "a": "Artar: önceki damla hep 1 s daha uzun düşüyor, hızı g·(1 s) daha fazla.", "star": false}, {"id": "BQ2.19", "ref": "Q2.19", "ch": 2, "q": "From a tall building one ball is thrown up at v₀ and another down at v₀. Compare (a) impact speeds, (b) which lands first, (c) displacements, (d) distances travelled.", "a": "(a) Eşit sürat (b) Aşağı atılan önce (c) Yer değiştirme eşit (d) Yukarı atılan daha uzun yol alır.", "star": false}, {"id": "BQ2.20", "ref": "Q2.20", "ch": 2, "q": "You run 120 m east at 3.00 m/s, then 120 m east at 5.00 m/s. Is your average velocity 4.00 m/s, more, or less?", "a": "4 m/s'den az: yavaş kısımda daha uzun kalırsın. 240/(40 + 24) = 3.75 m/s.", "star": false}, {"id": "BQ2.21", "ref": "Q2.21", "ch": 2, "q": "A ball thrown up stops for an instant at the top. How can it have an acceleration there?", "a": "İvme hızın değişimidir. Anlık v = 0 ama hız değişmeye devam ediyor.", "star": false}, {"id": "BQ2.22", "ref": "Q2.22", "ch": 2, "q": "An object dropped from height h takes time T. How long does it take from height 3h?", "a": "h = ½gt² → t ∝ √h: √3 T.", "star": false}, {"id": "BQ3.1", "ref": "Q3.1", "ch": 3, "q": "A pendulum swings in an arc. What is the direction of the bob's acceleration at the ends of the swing? At the midpoint?", "a": "Uçlarda v = 0 → merkezcil 0; ivme yola teğet, alt noktaya doğru. Ortada teğetsel 0; ivme yukarı, merkeze doğru.", "star": false}, {"id": "BQ3.2", "ref": "Q3.2", "ch": 3, "q": "If a particle's acceleration is antiparallel to its velocity, does it move in a straight line? What happens to its speed?", "a": "Düz çizgide gider ve yavaşlar.", "star": false}, {"id": "BQ3.3", "ref": "Q3.3", "ch": 3, "q": "For a projectile without air resistance, is there a point where a⃗ is parallel to v⃗? Perpendicular?", "a": "Paralel olduğu nokta yok (dik atış hariç). Dik olduğu tek yer tepe noktası.", "star": false}, {"id": "BQ3.4", "ref": "Q3.4", "ch": 3, "q": "A book leaves a table edge at v₀ and lands after time t. If the speed is 2v₀, what happens to (a) the time, (b) the horizontal distance, (c) the impact speed?", "a": "(a) Süre aynı (b) Yatay mesafe 2 kat (c) Çarpma hızı artar: vₓ 2 kat, v_y aynı.", "star": false}, {"id": "BQ3.5", "ref": "Q3.5", "ch": 3, "q": "A bullet is fired horizontally while another is dropped from the same height at the same moment. Which hits level ground first?", "a": "Aynı anda: düşey hareketleri aynı.", "star": false}, {"id": "BQ3.6", "ref": "Q3.6", "ch": 3, "q": "A package falls from a plane flying straight and level at constant speed. Ignoring air resistance, what path does the pilot see? A person on the ground?", "a": "Pilot: paket hep uçağın altında, düşey doğru. Yerden: parabol. Paket uçakla aynı yatay hıza sahip.", "star": true}, {"id": "BQ3.7", "ref": "Q3.7", "ch": 3, "q": "Sketch x, y, vₓ, v_y, aₓ, a_y versus t for a projectile launched from the origin at 0 < α < 90°.", "a": "x–t doğru, y–t aşağı açılan parabol, vₓ–t yatay, v_y–t eğimi −g olan doğru, aₓ = 0, a_y = −g sabit.", "star": false}, {"id": "BQ3.8", "ref": "Q3.8", "ch": 3, "q": "A frog has the same launch speed in any direction. How is its maximum straight-up height related to its maximum range R_max = v₀²/g?", "a": "h_max = v₀²/2g = R_max/2.", "star": false}, {"id": "BQ3.9", "ref": "Q3.9", "ch": 3, "q": "A projectile is launched at θ with speed v₀. At the top, what are its velocity, speed and acceleration?", "a": "v⃗ = v₀cos θ î (yatay), sürat v₀cos θ, a⃗ = −g ĵ.", "star": false}, {"id": "BQ3.10", "ref": "Q3.10", "ch": 3, "q": "In uniform circular motion, what are the average velocity and average acceleration over one full revolution?", "a": "İkisi de sıfır: yer değiştirme 0, v⃗ başa döner.", "star": false}, {"id": "BQ3.11", "ref": "Q3.11", "ch": 3, "q": "In uniform circular motion, how does the acceleration change if the speed triples? If the radius is halved?", "a": "a = v²/R: v ×3 → 9 kat; R ÷2 → 2 kat.", "star": false}, {"id": "BQ3.12", "ref": "Q3.12", "ch": 3, "q": "Is the acceleration perpendicular to the velocity in circular motion when the speed is changing?", "a": "Hayır: teğetsel bileşen var, ivme hıza dik olmaz.", "star": false}, {"id": "BQ3.13", "ref": "Q3.13", "ch": 3, "q": "Why does rain leave diagonal streaks on a moving car's side windows even without wind?", "a": "Damlanın arabaya göre hızı = v_damla − v_araba: düşey + geriye → çapraz.", "star": false}, {"id": "BQ3.14", "ref": "Q3.14", "ch": 3, "q": "In wind-driven rain, how should you tilt your umbrella?", "a": "Yağmurun sana göre hızına (v_yağmur − v_sen) karşı tut.", "star": false}, {"id": "BQ3.15", "ref": "Q3.15", "ch": 3, "q": "A 60 m wide river flows north at 1.2 m/s; you swim at 1.5 m/s relative to the water. What path relative to the earth crosses in the shortest time?", "a": "Suya göre dosdoğru karşıya yüz: t = 60/1.5 = 40 s; akıntı seni 48 m kuzeye taşır, yere göre yol çapraz.", "star": false}, {"id": "BQ3.16", "ref": "Q3.16", "ch": 3, "q": "A stone is thrown at an angle with no air resistance. Sketch its speed versus time.", "a": "Önce azalır, tepede en küçük (v₀cos α, sıfır değil), sonra artar.", "star": false}, {"id": "BQ4.1", "ref": "Q4.1", "ch": 4, "q": "Can an object be in equilibrium with only one force acting on it?", "a": "Hayır: tek kuvvet varsa net kuvvet sıfır olamaz.", "star": false}, {"id": "BQ4.2", "ref": "Q4.2", "ch": 4, "q": "A ball thrown up has zero velocity at the top. Is it in equilibrium there?", "a": "Hayır: net kuvvet mg, ivme g. Denge a = 0 demek.", "star": false}, {"id": "BQ4.3", "ref": "Q4.3", "ch": 4, "q": "A helium balloon hovers. Is it in equilibrium? Which forces act?", "a": "Evet: ağırlık ile havanın kaldırma kuvveti eşit.", "star": false}, {"id": "BQ4.4", "ref": "Q4.4", "ch": 4, "q": "Why can't you feel an airliner's 800 km/h speed in smooth air?", "a": "Sabit hız eylemsiz çerçeve; ivme yokken fark edilmez.", "star": false}, {"id": "BQ4.5", "ref": "Q4.5", "ch": 4, "q": "A rope in equilibrium is pulled at both ends with equal and opposite forces. Why isn't the tension zero?", "a": "Net kuvvet sıfır ama her noktada ipin iki parçası birbirini F ile çeker: gerilme F.", "star": false}, {"id": "BQ4.6", "ref": "Q4.6", "ch": 4, "q": "You whirl a brick on a rope in a horizontal circle and let go. What path does it take?", "a": "Teğet yönünde düz gider (ve düşer). Dışa doğru değil.", "star": false}, {"id": "BQ4.7", "ref": "Q4.7", "ch": 4, "q": "Why do passengers lurch forward when a car brakes, and slide sideways in a sharp turn?", "a": "Eylemsizlik: yolcu eski hızıyla devam etmek ister, araba yavaşlar ya da döner.", "star": false}, {"id": "BQ4.8", "ref": "Q4.8", "ch": 4, "q": "What is wrong with saying a \"force of inertia\" throws passengers forward in braking?", "a": "Öyle bir kuvvet yok; yolcuya net kuvvet etki etmediği için sabit hızla devam eder.", "star": false}, {"id": "BQ4.13", "ref": "Q4.13", "ch": 4, "q": "Is \"ma\" a force (\"the force of acceleration\")? If not, what is it?", "a": "Hayır, net kuvvetin sonucudur. FBD'ye çizilmez.", "star": false}, {"id": "BQ4.14", "ref": "Q4.14", "ch": 4, "q": "What acceleration do you measure for a falling object inside an elevator rising at constant 9.8 m/s?", "a": "g = 9.8 m/s²: sabit hızlı asansör eylemsiz çerçeve.", "star": false}, {"id": "BQ4.16", "ref": "Q4.16", "ch": 4, "q": "What is wrong with saying \"the force of gravity on an object is 9.8 m/s²\"?", "a": "9.8 m/s² ivmedir. Kuvvet mg, birimi N.", "star": false}, {"id": "BQ4.18", "ref": "Q4.18", "ch": 4, "q": "Explain \"it's not the fall that hurts, it's the sudden stop\" with Newton's laws.", "a": "Kısa sürede hız sıfırlanınca ivme ve kuvvet çok büyük olur.", "star": false}, {"id": "BQ4.21", "ref": "Q4.21", "ch": 4, "q": "A string can lift a heavy weight with a steady pull but breaks when jerked. Why?", "a": "Ani çekiş büyük ivme → T = m(g + a) büyür.", "star": false}, {"id": "BQ4.22", "ref": "Q4.22", "ch": 4, "q": "A crate hangs on a rope. Is the tension larger at rest or moving up at constant speed? Moving up: larger when speeding up or slowing down?", "a": "Durgun ve sabit hızda eşit (T = mg). Yukarı hızlanırken T > mg, yavaşlarken T < mg.", "star": false}, {"id": "BQ4.23", "ref": "Q4.23", "ch": 4, "q": "Which feels a larger gravitational pull, a 10 kg or a 20 kg stone? Why doesn't the 20 kg stone fall with twice the acceleration?", "a": "20 kg iki kat çekilir ama kütlesi de iki kat: a = g aynı.", "star": false}, {"id": "BQ4.24", "ref": "Q4.24", "ch": 4, "q": "The wagon pulls back on the horse as hard as the horse pulls the wagon. Why can the wagon still accelerate?", "a": "Etki–tepki farklı cisimlere etki eder. Arabanın ivmesi ona etki eden net kuvvete bağlı.", "star": false}, {"id": "BQ4.25", "ref": "Q4.25", "ch": 4, "q": "True or false: you push an object with P and it pushes back with F; F = P at constant velocity, but P > F if it accelerates.", "a": "Yanlış: üçüncü yasa, her durumda F = P.", "star": false}, {"id": "BQ4.26", "ref": "Q4.26", "ch": 4, "q": "A truck and a small car collide head-on. Which exerts the larger force? Which has the larger acceleration?", "a": "Kuvvetler eşit; küçük araba daha büyük ivme alır.", "star": false}, {"id": "BQ4.27", "ref": "Q4.27", "ch": 4, "q": "What force slows a car stopping on a level road? What force speeds it up?", "a": "Yolun lastiklere uyguladığı sürtünme: durmada geriye, hızlanmada ileri.", "star": false}, {"id": "BQ4.28", "ref": "Q4.28", "ch": 4, "q": "A small car pushes a large van; they speed up together. Compare the forces they exert on each other and their net forces.", "a": "Birbirlerine kuvvetleri eşit. Aynı ivme: ağır vanın net kuvveti büyük.", "star": false}, {"id": "BQ4.29", "ref": "Q4.29", "ch": 4, "q": "In a tug-of-war each person pulls the other equally hard. What decides who wins?", "a": "Yerin ayaklarına uyguladığı sürtünme kuvveti.", "star": false}, {"id": "BQ4.30", "ref": "Q4.30", "ch": 4, "q": "You push box A (150 N) with 100 N; it pushes box B (50 N) on a frictionless floor. Is A's force on B equal to, greater or less than 100 N?", "a": "Az: a = 100/(200/g); F_AB = m_B a = 25 N.", "star": false}, {"id": "BQ4.31", "ref": "Q4.31", "ch": 4, "q": "A manual says lift exceeds weight while a plane climbs steadily and is less while it descends steadily. Correct?", "a": "Yanlış: sabit hızla tırmanma ya da alçalmada ivme 0, kaldırma = ağırlık.", "star": false}, {"id": "BQ4.36", "ref": "Q4.36", "ch": 4, "q": "A 1000 kg car hits a 2500 kg car head-on. Which feels the larger force? The larger acceleration? Why are small-car passengers more at risk?", "a": "Kuvvetler eşit; küçük araba 2.5 kat ivme alır, yolcuları daha çok zarar görür.", "star": false}, {"id": "BQ4.37", "ref": "Q4.37", "ch": 4, "q": "In a windowless rocket in deep space, how can you tell whether you are accelerating?", "a": "Bir cisim bırak: havada kalırsa ivme yok, bir duvara giderse roket ivmeli.", "star": false}, {"id": "BQ5.1", "ref": "Q5.1", "ch": 5, "q": "A man sits in a seat hung from a rope over a ceiling pulley and holds the other end. What is the tension, and what force does the seat exert on him?", "a": "Adam + koltuk dengede: 2T = (m_adam + m_koltuk)g. Koltuğun adama kuvveti n = m_adam g − T.", "star": false}, {"id": "BQ5.2", "ref": "Q5.2", "ch": 5, "q": "Give one case where the normal force equals the weight and two where it does not.", "a": "Eşit: yatay zemin, başka dikey kuvvet yok. Değil: eğik düzlem (mg cos θ), ivmeli asansör, açılı itme.", "star": false}, {"id": "BQ5.3", "ref": "Q5.3", "ch": 5, "q": "Why does a clothesline always sag a little, however tight it is?", "a": "Gerilmenin düşey bileşeni ipin ağırlığını taşımalı; tam yatay ipte düşey bileşen olmazdı.", "star": false}, {"id": "BQ5.4", "ref": "Q5.4", "ch": 5, "q": "A car climbs a steep hill at constant speed. List the forces. What pushes it up the hill?", "a": "Ağırlık, normal, hava direnci, yolun lastiklere yokuş yukarı statik sürtünmesi (iten bu). Net 0.", "star": false}, {"id": "BQ5.5", "ref": "Q5.5", "ch": 5, "q": "How could astronauts measure their mass in apparent weightlessness?", "a": "Bilinen kuvvet uygula, ivmeyi ölç: m = F/a (ya da yay salınım periyodu).", "star": false}, {"id": "BQ5.6", "ref": "Q5.6", "ch": 5, "q": "Is it easier to push a box up a ramp horizontally or parallel to the ramp? Why?", "a": "Paralel: yatay itmenin bir bileşeni yüzeye bastırır, sürtünmeyi artırır.", "star": false}, {"id": "BQ5.7", "ref": "Q5.7", "ch": 5, "q": "A woman in an elevator lets go of her briefcase and it doesn't fall to the floor. How is the elevator moving?", "a": "Serbest düşüşte (a = g aşağı).", "star": false}, {"id": "BQ5.8", "ref": "Q5.8", "ch": 5, "q": "A block rests on a ramp held by friction. Is it easier to start it moving up or down the ramp?", "a": "Aşağı: ağırlığın eğim bileşeni yardım eder.", "star": false}, {"id": "BQ5.9", "ref": "Q5.9", "ch": 5, "q": "A crate slides up a ramp with kinetic friction, stops, and slides down. Which acceleration is larger, going up or going down?", "a": "Çıkarken: g(sin θ + μ_k cos θ) > g(sin θ − μ_k cos θ).", "star": false}, {"id": "BQ5.10", "ref": "Q5.10", "ch": 5, "q": "Why is less force needed to pull a crate at θ above horizontal than to push it at θ below?", "a": "Yukarı çekişte F sin θ n'yi azaltır, sürtünme küçülür; aşağı itişte n büyür.", "star": false}, {"id": "BQ5.11", "ref": "Q5.11", "ch": 5, "q": "Without friction, could you (a) round a flat curve, (b) jump up, (c) start walking, (d) climb a vertical ladder, (e) change lanes?", "a": "(a) Hayır (b) Evet (normal kuvvet) (c) Hayır (d) Evet, basamaklara basarak (e) Hayır.", "star": false}, {"id": "BQ5.12", "ref": "Q5.12", "ch": 5, "q": "Why does a wet bathtub feel secure but allow catastrophic slips? Use the two friction coefficients.", "a": "μ_s > μ_k: kayma başlamadan tutuş iyi, başlayınca μ_k küçük olduğu için durmak zor.", "star": false}, {"id": "BQ5.13", "ref": "Q5.13", "ch": 5, "q": "You push a crate across an elevator floor. When is the needed force least, greatest: accelerating up, down, or constant speed?", "a": "n = m(g ± a): yukarı hızlanırken en büyük, aşağı hızlanırken en küçük.", "star": false}, {"id": "BQ5.14", "ref": "Q5.14", "ch": 5, "q": "\"Friction always opposes motion.\" Give an example where (a) static and (b) kinetic friction causes motion.", "a": "(a) Yürümek, hızlanan araba, kamyon kasasındaki kutu (b) Hareketli banda bırakılan kutu kayarken hızlanır.", "star": false}, {"id": "BQ5.15", "ref": "Q5.15", "ch": 5, "q": "In uniform circular motion there is a net force. Why doesn't the speed change?", "a": "Net kuvvet hıza dik; sadece yönü değiştirir.", "star": false}, {"id": "BQ5.16", "ref": "Q5.16", "ch": 5, "q": "An icy curve is banked for 80 km/h. You drive more slowly to be careful. What may happen?", "a": "Sürtünme yok: yavaş gidersen araba eğimden içe doğru kayar.", "star": false}, {"id": "BQ5.17", "ref": "Q5.17", "ch": 5, "q": "Can a string whirling a ball in a horizontal circle ever be exactly horizontal?", "a": "Hayır: düşey bileşen ağırlığı dengelemeli; ip yatayın altına eğik.", "star": false}, {"id": "BQ5.18", "ref": "Q5.18", "ch": 5, "q": "Why is \"centrifugal force\" not drawn in free-body diagrams?", "a": "Eylemsiz çerçevede böyle bir kuvvet yok; merkezcil ivmeyi gerçek kuvvetler sağlar.", "star": false}, {"id": "BQ5.19", "ref": "Q5.19", "ch": 5, "q": "A stopper whirled on a string is released when directly in front of a student. Should she worry?", "a": "Hayır: tıpa bırakıldığı andaki teğet boyunca gider, ona doğru değil.", "star": false}, {"id": "BQ5.20", "ref": "Q5.20", "ch": 5, "q": "Why are loop-the-loop tracks given a larger radius at the bottom than at the top?", "a": "n = m(g + v²/R): altta hız büyük, R büyük tutulursa kuvvet sınırda kalır.", "star": false}, {"id": "BQ5.21", "ref": "Q5.21", "ch": 5, "q": "A ball is dropped in a tube with and without air. How can multiflash photos tell which is which?", "a": "Hava dirençli olanda aralıklar daha az büyür (terminal hıza yaklaşır).", "star": false}, {"id": "BQ5.22", "ref": "Q5.22", "ch": 5, "q": "A ball thrown up at v₀ returns to your hand. Compare its speed to v₀ (a) without and (b) with air resistance.", "a": "(a) v₀ (b) Daha küçük: sürükleme enerji alır.", "star": false}, {"id": "BQ5.23", "ref": "Q5.23", "ch": 5, "q": "With air resistance, is the rise time or the fall time longer?", "a": "İniş uzun: yukarıda ivme g + D/m, aşağıda g − D/m.", "star": false}, {"id": "BQ5.24", "ref": "Q5.24", "ch": 5, "q": "Two identical tennis balls, one water-filled, are dropped together. Which lands first without air resistance? With it?", "a": "Hava yok: aynı anda. Hava var: su dolu önce.", "star": false}, {"id": "BQ5.25", "ref": "Q5.25", "ch": 5, "q": "A ball falls with air resistance. Sketch its acceleration versus time.", "a": "g'den başlayıp sıfıra azalır.", "star": false}, {"id": "BQ5.26", "ref": "Q5.26", "ch": 5, "q": "Same ball, +y downward. Sketch v_y versus time.", "a": "Sıfırdan artıp terminal hıza yaklaşan eğri.", "star": false}, {"id": "BQ5.27", "ref": "Q5.27", "ch": 5, "q": "With air drag, does a batted ball cover more horizontal distance while rising or while falling?", "a": "Çıkarken: yatay hız sürekli azalır, tepe noktası menzilin ortasından ileride.", "star": false}, {"id": "BQ5.28", "ref": "Q5.28", "ch": 5, "q": "Why does a ball thrown off a high cliff eventually move straight down when there is air resistance?", "a": "Sürükleme yatay hızı sıfıra götürür, düşey hız terminal hıza yaklaşır.", "star": false}, {"id": "BQ6.1", "ref": "Q6.1", "ch": 6, "q": "Can a change of coordinates turn positive work into negative work?", "a": "Hayır: W = F⃗·s⃗, kuvvet ile yer değiştirme arasındaki açıya bağlı.", "star": false}, {"id": "BQ6.2", "ref": "Q6.2", "ch": 6, "q": "An elevator is lifted at constant speed. Is the total work on it positive, negative or zero?", "a": "Sıfır: ΔK = 0.", "star": false}, {"id": "BQ6.3", "ref": "Q6.3", "ch": 6, "q": "A rope accelerates an object, and the object pulls back equally on the rope. Is the total work then zero?", "a": "Hayır: tepki ipe etki eder. Cisim üzerindeki toplam iş = ipin işi ≠ 0.", "star": false}, {"id": "BQ6.4", "ref": "Q6.4", "ch": 6, "q": "Work W brings an object from rest to speed v and kinetic energy K. With twice the work (from rest), what are the speed (in terms of v) and K (in terms of K)?", "a": "K₂ = 2K, v₂ = √2 v. İş-enerji teoremi W = ΔK.", "star": true}, {"id": "BQ6.5", "ref": "Q6.5", "ch": 6, "q": "Can the total work be zero when a nonzero net force acts on a moving object? Example?", "a": "Evet: düzgün dairesel hareket, kuvvet hıza dik.", "star": false}, {"id": "BQ6.7", "ref": "Q6.7", "ch": 6, "q": "In a conical pendulum, which forces do work on the bob?", "a": "Hiçbiri: gerilme ve ağırlık hıza dik.", "star": false}, {"id": "BQ6.9", "ref": "Q6.9", "ch": 6, "q": "Sketch an F(x) that does zero total work from x₁ to x₂ although F is not zero everywhere.", "a": "F–x eğrisi eksenin üstünde ve altında eşit alan kaplasın.", "star": false}, {"id": "BQ6.10", "ref": "Q6.10", "ch": 6, "q": "Does K change more from 10 to 15 m/s or from 15 to 20 m/s?", "a": "15→20: ΔK ∝ v₂² − v₁² = 175 > 125.", "star": false}, {"id": "BQ6.11", "ref": "Q6.11", "ch": 6, "q": "Three 1.5 kg objects move at 5.0 m/s in different directions (one with components 3 and 4 m/s). Same kinetic energy?", "a": "Evet: üçünün sürati 5.0 m/s, K = 18.8 J. K yöne bağlı değil.", "star": false}, {"id": "BQ6.12", "ref": "Q6.12", "ch": 6, "q": "Can the total work on an object be negative? Can its magnitude exceed the initial kinetic energy?", "a": "Negatif olabilir; büyüklüğü başlangıç K'sını aşamaz (K negatif olmaz).", "star": false}, {"id": "BQ6.13", "ref": "Q6.13", "ch": 6, "q": "By what factor must the work increase to give three times the final speed (from rest)?", "a": "9 kat: K ∝ v².", "star": false}, {"id": "BQ6.14", "ref": "Q6.14", "ch": 6, "q": "Is the work needed to stop a speeding truck the same in the frame of a roadside officer and of the driver?", "a": "Hayır, çerçeveye bağlı: polise göre K büyük, şoföre göre zaten 0.", "star": false}, {"id": "BQ6.15", "ref": "Q6.15", "ch": 6, "q": "You hold a briefcase with your arm straight down. Does your hand do work while (a) walking level at constant speed, (b) riding an elevator up?", "a": "(a) Hayır (kuvvet ⊥ hareket) (b) Evet, pozitif.", "star": false}, {"id": "BQ6.16", "ref": "Q6.16", "ch": 6, "q": "Can friction ever do positive work?", "a": "Evet: hızlanan kamyondaki kutuya statik sürtünme ileri, kutu ileri gider.", "star": false}, {"id": "BQ6.18", "ref": "Q6.18", "ch": 6, "q": "What is wrong with calling a strong person \"powerful\", or saying a worker carrying a bag across level ground does a lot of work?", "a": "Güç = iş/zaman; güçlü kişi büyük kuvvet uygular. Yatay taşımada fiziksel iş 0.", "star": false}, {"id": "BQ6.19", "ref": "Q6.19", "ch": 6, "q": "A 20 MW diesel engine drives a 30 MW generator. Possible?", "a": "İmkânsız: çıkış gücü girişten büyük olamaz.", "star": false}, {"id": "BQ6.20", "ref": "Q6.20", "ch": 6, "q": "A car speeds up with the engine at constant power. Is the acceleration larger at the start or the end?", "a": "Başta: P = Fv, v küçükken F büyük.", "star": false}, {"id": "BQ6.21", "ref": "Q6.21", "ch": 6, "q": "What does the area under a P–t graph mean? How do you get the average power from it?", "a": "Alan = iş. Ortalama güç = alan/(t₂ − t₁).", "star": false}, {"id": "BQ6.22", "ref": "Q6.22", "ch": 6, "q": "A nonzero net force acts. Can (a) speed, (b) velocity, (c) kinetic energy stay constant?", "a": "(a) Evet (b) Hayır (c) Evet (düzgün dairesel).", "star": false}, {"id": "BQ6.23", "ref": "Q6.23", "ch": 6, "q": "A force stretches a spring x with work W. Twice the force: what stretch and what work?", "a": "2x ve ½k(2x)² = 4W.", "star": false}, {"id": "BQ6.24", "ref": "Q6.24", "ch": 6, "q": "Work W stretches a spring x. How much work for an additional x?", "a": "½k(2x)² − ½kx² = 3W.", "star": false}, {"id": "BQ7.1", "ref": "Q7.1", "ch": 7, "q": "Using energy, explain why a ball thrown up returns slower than v₀ when there is air resistance.", "a": "Sürükleme negatif iş yapar, mekanik enerji azalır: v < v₀.", "star": false}, {"id": "BQ7.2", "ref": "Q7.2", "ch": 7, "q": "A projectile has the same initial K at any launch angle. Why doesn't it reach the same height?", "a": "Tepede yatay hız (K'nın bir kısmı) kalır; sadece düşey kısım U'ya döner.", "star": false}, {"id": "BQ7.3", "ref": "Q7.3", "ch": 7, "q": "Does the speed at the bottom of a frictionless ramp depend on its shape or only its height? With friction?", "a": "Sürtünmesiz: sadece yükseklik. Sürtünmeli: yol uzunluğu ve şekil de önemli.", "star": false}, {"id": "BQ7.4", "ref": "Q7.4", "ch": 7, "q": "Two students use different origins (roof, ground) for a falling egg. Do they agree on initial U, final U, ΔU and final K?", "a": "U₁ ve U₂ farklı; ΔU ve son K aynı.", "star": false}, {"id": "BQ7.5", "ref": "Q7.5", "ch": 7, "q": "A bowling ball pendulum released from the nose of a teacher returns to stop at his nose. What happens if a student gives it a push?", "a": "Enerji eklenir: top bırakıldığı yükseklikten daha yükseğe çıkar, öğretmene çarpar.", "star": false}, {"id": "BQ7.6", "ref": "Q7.6", "ch": 7, "q": "Can friction increase a system's mechanical energy? Example?", "a": "Evet: hızlanan kamyon kasasındaki kutu, statik sürtünme pozitif iş yapar.", "star": false}, {"id": "BQ7.9", "ref": "Q7.9", "ch": 7, "q": "A book is lifted. Does gravity do positive or negative work? Does U increase?", "a": "Yerçekiminin işi negatif, U artar.", "star": false}, {"id": "BQ7.11", "ref": "Q7.11", "ch": 7, "q": "A 1 kg and a 10 kg stone are dropped from the same height. Same initial U? Same acceleration? Same final speed? Same final K?", "a": "(a) Hayır (b) Evet, g (c) Evet, √(2gh) (d) Hayır, K = mgh.", "star": false}, {"id": "BQ7.12", "ref": "Q7.12", "ch": 7, "q": "Two different masses are launched up by identical, equally compressed springs. Same maximum height? Same U at the top?", "a": "(a) Hayır: hafif olan daha yükseğe (b) Evet: ikisinde de ½kx².", "star": false}, {"id": "BQ7.14", "ref": "Q7.14", "ch": 7, "q": "Can the work of gravity and of friction on a sliding box each be written as −ΔU?", "a": "Yerçekimi evet (U = mgy). Sürtünme hayır: işi yola bağlı, korunumsuz.", "star": false}, {"id": "BQ7.15", "ref": "Q7.15", "ch": 7, "q": "Why is friction non-conservative? Does it store energy?", "a": "Kapalı yolda işi sıfır değil; enerjiyi geri vermez, iç enerjiye çevirir.", "star": false}];
+const CK = [
+ ['1.1','Anlamlı basamak (yoğunluk)','B','Hacim 6.0×10⁻⁴ iki anlamlı basamaklı; sonuç da iki basamak: 3.0×10³ kg/m³.'],
+ ['1.2','Açı +y ekseninden ölçülünce bileşenler','B','β +y ekseninden ölçülüyor: Eₓ = E sin β, E_y = E cos β.'],
+ ['1.3','Hangi vektör −x, +y bileşenli','D','Negatif x, pozitif y = sol üst çeyrek. Slayttaki şekilde o çeyreğe giden vektör.'],
+ ['1.4','Kesikli vektör = A⃗ + B⃗','C','Uç uca ekle: toplam, ilk vektörün kuyruğundan son vektörün ucuna gider.'],
+ ['1.5','Kesikli vektör = A⃗ − B⃗','A','A⃗ − B⃗ = A⃗ + (−B⃗); B⃗\'nin ucundan A⃗\'nın ucuna giden vektör.'],
+ ['1.6','Kesikli vektör = B⃗ − A⃗','B','B⃗ − A⃗: A⃗\'nın ucundan B⃗\'nin ucuna giden vektör.'],
+ ['1.7','A⃗ + B⃗ bileşenlerinin işareti','A','A⃗ = (0, −8.0), B⃗ = (7.5, 13.0) → toplam (7.5, 5.0): ikisi de pozitif.'],
+ ['1.8','A⃗ − B⃗ bileşenlerinin işareti','D','(0 − 7.5, −8.0 − 13.0) = (−7.5, −21.0): ikisi de negatif.'],
+ ['1.9','|A⃗ + B⃗| için her zaman doğru olan','C','Toplamın büyüklüğü |A − B| ile A + B arasında; en az |A − B|.'],
+ ['1.10','|A⃗ − B⃗| için her zaman doğru olan','C','Aynı üçgen eşitsizliği: |A⃗ − B⃗| ≥ |A − B|.'],
+ ['1.11','E⃗ = A⃗ + D⃗ bileşenleri','A','A⃗ = (0, −8), D⃗ = (−8, +6) → E⃗ = (−8.00, −2.00) m.'],
+ ['1.12','θ en büyük olan vektör','E','+18î − 24ĵ dördüncü çeyrekte, θ ≈ 307°; diğerleri daha küçük açıda.'],
+ ['1.13','C⃗·D⃗ skaler çarpım','C','C⃗·D⃗ = CD cos φ = (120 m²) cos φ; φ iki vektör arasındaki açı (eksen açılarından bul).'],
+ ['1.14','A⃗ × C⃗ vektörel çarpım','D','Büyüklük AC sin(90° + 25°) = 96 cos 25°; sağ el kuralı −k̂ verir.'],
+ ['1.15','(3î+4ĵ)·(−8î+6ĵ)','A','3(−8) + 4(6) = 0: vektörler dik.'],
+ ['1.16','(3î+4ĵ)×(−8î+6ĵ)','C','AₓB_y − A_yBₓ = 18 − (−32) = 50 → +50k̂.'],
+ ['1.17','(3î−4ĵ)·6k̂','A','î·k̂ = ĵ·k̂ = 0 → sıfır.'],
+ ['1.18','(3î−4ĵ)×6k̂','C','18(î×k̂) − 24(ĵ×k̂) = −18ĵ − 24î.'],
+ ['2.1','x–t grafiğinde hız sıralaması','C','Eğim = hız: A en dik, C daha az dik, B yatay (0).'],
+ ['2.2','x–t: vₓ en büyük nokta','A','En dik pozitif eğim P\'de; sonra eğim azalır.'],
+ ['2.3','x–t: sürat en büyük nokta','C','Eğimin mutlak değeri en büyük R\'de (en dik iniş).'],
+ ['2.4','x–t: aₓ en pozitif nokta','D','Eğri yukarı bükülüyorsa a > 0; minimum noktası S\'de en belirgin.'],
+ ['2.5','Yukarı atılan top tepe noktasında','C','v = 0, a = −g (aşağı). İvme hiç sıfır olmaz.'],
+ ['2.6','Hareket diyagramı: 3. noktada işaretler','C','Sola gidiyor (v < 0), aralıklar büyüyor: hızlanıyor, a da sola (a < 0).'],
+ ['2.7','Hareket diyagramına uyan v–t','E','v negatif ve büyüklüğü artıyor: sürekli negatif, düşen doğru.'],
+ ['2.8','Hareket diyagramına uyan a–t','B','Sabit ve negatif ivme: eksenin altında yatay çizgi.'],
+ ['2.9','x₀ > 0, v₀ < 0, a > 0 için v–t','B','Negatif değerden başlayıp yükselen doğru (eğim = a > 0).'],
+ ['2.10','x = 5t − 10t² + 4t³: a sabit mi?','E','a = d²x/dt² = −20 + 24t; zamana bağlı, sabit değil.'],
+ ['2.11','Aynı x(t), t = 1 s\'de ne yapıyor?','B','v(1) = 5 − 20 + 12 = −3 m/s, a(1) = +4 m/s²: zıt işaret → yavaşlıyor.'],
+ ['2.12','Eğik ray (x aşağı +): a–t','A','İvme hep g sin θ ve aşağı yönde: sabit pozitif.'],
+ ['2.13','Eğik ray: v–t','E','Başta yukarı gidiyor (v < 0), ivme +: negatiften başlayıp yükselen doğru.'],
+ ['2.14','Eğik ray: x–t','D','Önce negatif x\'e gidip döner: sıfırdan inip yükselen parabol.'],
+ ['2.15','Eğimi azalan v–t eğrisi','C','|vₓ| artıyor (hızlanıyor) ama eğim küçülüyor: ivme azalıyor.'],
+ ['2.16','v–t grafiğinden bulunamayan','C','Alan sadece Δx verir; konum için x₀ gerekir.'],
+ ['2.17','x = 5 − 4t + 2t²: ne zaman durur?','C','v = −4 + 4t = 0 → t = 1.0 s.'],
+ ['2.18','Aynı x(t): x = 0\'dan kaç kez geçer?','E','2t² − 4t + 5 = 0 → diskriminant 16 − 40 < 0: hiç.'],
+ ['2.19','x = 5 + 4t − 2t² için x–t','E','x₀ = 5 > 0, önce artar sonra azalır: aşağı açılan parabol.'],
+ ['2.20','Aynı hareket için v–t','C','v = 4 − 4t: pozitiften başlayıp düşen doğru.'],
+ ['2.21','3h yüksekliği için ilk hız','A','h = v₀²/2g → h ile v₀² orantılı: hız ×√3.'],
+ ['3.1','Üçgen yolda net yer değiştirme','E','Başladığı noktaya dönüyor: yer değiştirme 0 (yol 1200 m).'],
+ ['3.2','Ortalama hız = son anlık hız','C','Sadece düz çizgide sabit hızla: hız vektörü hiç değişmez.'],
+ ['3.3','Rover\'ın ortalama ivme yönü','A','a⃗_ort, Δv⃗ = v⃗₂ − v⃗₀ yönünde: sola ve yukarı.'],
+ ['3.4','Sabit süratte ivmenin sıfır olduğu nokta','B','Yolun düz olduğu yerde (C) yön değişmiyor: ivme 0.'],
+ ['3.5','Virajda sabit süratli bisikletli','C','İvmeli; eğrinin içine doğru (merkezcil).'],
+ ['3.6','Oval pistte ivme yönü','E','Sabit süratte ivme hıza dik ve eğrinin içine doğru; O merkezine doğru değil.'],
+ ['3.7','Tepenin üstünde kızağın ivmesi','D','Yavaşlamadan hızlanmaya geçiş: teğetsel 0; sadece merkezcil, aşağı.'],
+ ['3.8','Sarkaç en alt noktada ivme','B','Teğetsel bileşen 0; merkezcil bileşen yukarı.'],
+ ['3.9','Sarkaç uç noktada ivme','C','v = 0 → merkezcil 0; ivme yola teğet, aşağı ve sağa.'],
+ ['3.10','v⃗ = 3ĵ, a⃗ = 0.5î − 0.2ĵ','C','a⃗·v⃗ < 0 → yavaşlıyor; a⃗\'nın dik bileşeni var → eğri yol.'],
+ ['3.11','v⃗ = 2î + 3ĵ, aynı a⃗','A','a⃗·v⃗ = 1.0 − 0.6 = +0.4 > 0 → hızlanıyor; paralel değil → eğri.'],
+ ['3.12','Bırakılan top ve yatay atılan top','C','Düşey hareket yatay hızdan bağımsız: aynı anda.'],
+ ['3.13','Uçaktan düşen cisim (yerden)','D','Uçakla aynı yatay hıza sahip: hep tam altında. Geçen yılın B1\'i!'],
+ ['3.14','Maymun ve dart','A','İkisi aynı anda düşer. Dart tepe noktası P\'deyken maymun henüz P\'den yüksekte.'],
+ ['3.15','Eğik atışta ivme nerede en büyük','D','Her yerde aynı: g, aşağı.'],
+ ['3.16','2R, 2v ile ivme','C','a = v²/R → (2v)²/(2R) = 2v²/R: iki kat.'],
+ ['3.17','Altta 4 kat merkezcil ivme → hız','B','Aynı R: a ∝ v² → 4 kat a = 2 kat v.'],
+ ['3.18','Kuzey rüzgârında batıya uçuş','C','Yer hızı = √(200² − 120²) = 160 km/h.'],
+ ['3.19','Burun doğuda, yer hızı kuzeyde','D','v_hava = v_yer − v_uçak = 150 K − 150 D → 212 km/h, güneydoğudan kuzeybatıya.'],
+ ['4.1','Sabit hızla çıkan asansörde kablo kuvveti','B','Sabit hız → ΣF = 0 → T = mg.'],
+ ['4.2','Sabit hızla inen asansörde kablo kuvveti','B','Yine sabit hız → T = mg. Yön değil ivme önemli.'],
+ ['4.3','v–t grafiğinden net kuvvet grafiği','E','F_net ∝ a = v–t eğimi: düz kısımlarda 0, yükselen kısımda pozitif.'],
+ ['4.4','At ve araba','C','Üçüncü yasa: kuvvetler her zaman eşit büyüklükte.'],
+ ['4.5','Hafif ve ağır sandık (sürtünmeli)','C','Üçüncü yasa; sürtünme ve ivme fark etmez.'],
+ ['4.6','Sabit hızda T = mg hangi yasadan?','A','Birinci yasa: ivme 0 → net kuvvet 0.'],
+ ['4.7','F, A\'ya net kuvvet, B\'ye net kuvvet','D','Aynı a: F = (m_A + m_B)a > m_B a > m_A a (B daha ağır).'],
+ ['4.8','Sürtünmesiz yüzeyde iki sandık','E','a = F/(m_A + m_B), sıra fark etmez; sürtünmesiz yüzeyde her F hareket ettirir.'],
+ ['4.9','Yürümeye başlarken seni iten kuvvet','E','Yerin ayağına uyguladığı kuvvet (statik sürtünme).'],
+ ['4.10','Üstteki blok sabit hızla','C','A\'nın ivmesi 0 → A\'ya yatay net kuvvet 0 → B, A\'ya yatay kuvvet uygulamaz.'],
+ ['4.11','Ağırlığın üçüncü yasa çifti','C','Topun Dünya\'yı yukarı çekmesi. Masanın n\'si çift değil.'],
+ ['4.12','Masadaki topta n = w neden?','A','Top hareketsiz: birinci yasa.'],
+ ['4.13','İple bağlı 6 kg ve 4 kg sandık','B','Aynı ivme; küçük kütle → küçük net kuvvet.'],
+ ['4.14','Sabit hızda sandıkların birbirine kuvveti','C','Üçüncü yasa: eşit.'],
+ ['4.15','İvmelenirken sandıkların birbirine kuvveti','C','Üçüncü yasa: ivme olsa da eşit.'],
+ ['4.16','Tepsi ve süt kutusu, sabit hız','C','Üçüncü yasa: eşit.'],
+ ['4.17','Tepsi ve süt kutusu, ivmeli','C','Üçüncü yasa: eşit.'],
+ ['5.1','Motorun FBD\'sindeki zincir','A','Motora sadece T₁ dokunuyor (ve ağırlık). T₂, T₃ halkaya etki eder.'],
+ ['5.2','İple tutulan araba, rampada n ile w','C','n = w cos α < w.'],
+ ['5.3','45°\'lik iki iple trafik lambası','B','2T cos 45° = w → T = w/√2.'],
+ ['5.4','Rampadaki arabanın FBD\'si','A','n eğime dik, T eğim boyunca, w aşağı. ma kuvvet değildir.'],
+ ['5.5','Aşağı hızlanan kovada T ile w₂','C','Kova aşağı hızlanıyor → w₂ − T = m₂a > 0 → T < w₂.'],
+ ['5.6','A\'nın anlık durduğu anda gerilme','D','Sistemin ivmesi hep B aşağı yönünde (v = 0 olsa da) → T < w_B.'],
+ ['5.7','B sandığının FBD\'si','A','B\'nin ağırlığı. F sadece A\'ya etki eder; B\'nin A\'ya kuvveti A\'nın FBD\'sinde; ivme kuvvet değil.'],
+ ['5.8','Sabit hızla kayan kızakta n','C','Eğimde n = w cos α < w (hız fark etmez).'],
+ ['5.9','A üzerindeki B kayarken','E','A, B\'ye sağa sürtünme uygular → B sağa ivmelenir (A\'dan yavaş).'],
+ ['5.10','Kaymadan yürürken FBD\'deki sürtünme','B','Kayma yok → statik; zeminin senin ayağına uyguladığı.'],
+ ['5.11','İp kopunca buzdaki kızak','E','Net yatay kuvvet 0 → teğet boyunca düz çizgi.'],
+ ['5.12','Konik sarkaçta gerilme','A','T cos β = mg → T = mg/cos β > mg.'],
+ ['5.13','En altta T = 1.5mg → hız','D','T − mg = mv²/L → v = √(gL/2).'],
+ ['6.1','Çıkan asansör: kablo ve asansörün işi','B','Kablonun asansöre işi +; asansörün kabloya kuvveti aşağı, hareket yukarı → −.'],
+ ['6.2','İnen asansör: işler','C','Kablo kuvveti yukarı, hareket aşağı → −; tersinde +.'],
+ ['6.3','Aynı kuvvet, m ve 2m buz teknesi','E','W = Fs ikisinde aynı → aynı K.'],
+ ['6.4','Sabit hızla çekilen kızağa toplam iş','C','Sabit hız → ΔK = 0 → toplam iş 0.'],
+ ['6.5','Net kuvvet ≠ 0 iken sabit kalabilen','D','Kuvvet hıza dikse (dairesel) K ve sürat sabit; hız vektörü değişir.'],
+ ['6.6','Rampadan inip durana kadar net iş','B','Durgun başlar, durgun biter → ΔK = 0 → net iş 0.'],
+ ['6.7','Bağlı bloklarda yerçekiminin işi','D','Masadaki blok yatay gidiyor → yerçekimi işi 0; sadece asılı blokta.'],
+ ['6.8','8 kg ve 6 kg bloğa toplam iş','A','Toplam iş = ΔK = ½mv²; aynı hız, 8 kg daha ağır.'],
+ ['6.9','Üç blokta yerçekiminin işi','D','A yatay (0), B yukarı çıkıyor (−), C aşağı iniyor (+).'],
+ ['6.10','Rampadaki m₁ ve asılı m₂\'ye toplam iş','A','m₁ aşağı kaydığına göre m₁ sin α > m₂ → m₁ > m₂; aynı hızda ΔK daha büyük.'],
+ ['6.11','Sabit güçte net kuvvet','C','P = Fv sabit, v artıyor → F azalır.']
+];
+const DECK = [];
+BANK_C.forEach(p => DECK.push({ type: 'C', id: p.id, ch: p.ch, star: p.star, p }));
+BANK_B.forEach(q => DECK.push({ type: 'B', id: q.id, ch: q.ch, star: q.star, q }));
+CK.forEach(r => DECK.push({ type: 'A', id: 'A' + r[0], ch: +r[0].split('.')[0], star: false, r }));
+const TYPE_ORDER = { C: 0, B: 1, A: 2 };
+const numKey = s => s.replace(/^[A-Z]+/, '').split('.').map(Number);
+DECK.sort((x, y) => TYPE_ORDER[x.type] - TYPE_ORDER[y.type] || x.ch - y.ch || numKey(x.id)[1] - numKey(y.id)[1]);
+
+// ---------- practice app ----------
+(function () {
+  let status = store.get('status', {});          // id -> 'ok' | 'bad' | 'seen'
+  let notes = store.get('notes', {});            // id -> own answer text (Part B)
+  const F = store.get('filters', { type: 'all', ch: 'all', st: 'all' });
+  let order = null;                              // shuffled id order or null
+  let curId = store.get('cur', null);
+  const $ = id => document.getElementById(id);
+  const save = () => { store.set('status', status); };
+  function list() {
+    let L = DECK.filter(d => (F.type === 'all' || d.type === F.type) && (F.ch === 'all' || d.ch === +F.ch)
+      && (F.st === 'all' || (F.st === 'new' && !status[d.id]) || (F.st === 'bad' && status[d.id] === 'bad') || (F.st === 'star' && d.star)));
+    if (order) { const pos = new Map(order.map((id, i) => [id, i])); L = L.slice().sort((a, b) => pos.get(a.id) - pos.get(b.id)); }
+    return L;
+  }
+  function setSeg(id, key) {
+    const el = $(id);
+    el.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === F[key])));
+    el.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      F[key] = b.dataset.v; store.set('filters', F);
+      el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      const L = list(); curId = L.length ? L[0].id : null; render();
+    });
+  }
+  setSeg('fType', 'type'); setSeg('fCh', 'ch'); setSeg('fSt', 'st');
+
+  function meters() {
+    const parts = [['A', 'Clicker'], ['B', 'Kavramsal'], ['C', 'Problem']];
+    $('meters').innerHTML = parts.map(([t, name]) => {
+      const all = DECK.filter(d => d.type === t), ok = all.filter(d => status[d.id] === 'ok').length, bad = all.filter(d => status[d.id] === 'bad').length;
+      return `<div class="meter"><b>${t} · ${name}</b><span class="track2"><i class="g" style="width:${ok / all.length * 100}%"></i><i class="r" style="width:${bad / all.length * 100}%"></i></span><span>${ok}/${all.length}</span></div>`;
+    }).join('');
+  }
+  function qmap(L) {
+    $('mapCount').textContent = L.length + ' soru';
+    $('qmap').innerHTML = L.map(d => {
+      const s = status[d.id] || '';
+      const lab = d.type === 'A' ? d.r[0] : d.type === 'B' ? d.q.ref.replace('Q', '') : d.p.ref;
+      return `<button type="button" data-id="${d.id}" class="${s} ${d.id === curId ? 'cur' : ''} ${d.star ? 'star' : ''}" title="${d.type} · ${lab}" aria-label="${d.type} ${lab}">${lab.split('.')[1]}</button>`;
+    }).join('');
+  }
+  $('qmap').addEventListener('click', e => { const b = e.target.closest('button[data-id]'); if (!b) return; curId = b.dataset.id; render(); });
+
+  const stLabel = id => status[id] === 'ok' ? '<span class="st2 ok">✓ doğru</span>' : status[id] === 'bad' ? '<span class="st2 bad">✗ yanlış</span>' : status[id] === 'seen' ? '<span class="st2">görüldü</span>' : '';
+  function head(d, tag, ref, extra) {
+    return `<div class="sheet-h"><span class="ptag ${d.type}">${tag}</span><span class="ref">${ref}</span>${extra || ''}${d.star ? '<span class="starb">★ geçen yıl sınavda</span>' : ''}${stLabel(d.id)}</div>`;
+  }
+  function cardC(d) {
+    const p = d.p;
+    return `<article class="sheet">${head(d, 'PART C · PROBLEM', 'Kitapta Exercise ' + p.ref + ' · Bölüm ' + p.ch, `<span class="lvl">${'•'.repeat(p.lvl)}</span>`)}
+      <div class="sheet-b"><h2 class="qtitle">${esc(p.title)}</h2><p class="qtext">${esc(p.text)}</p>
+      <div class="box"><span class="box-l">Write your answer in the box below!</span><div class="parts2">${p.parts.map((x, i) => `<div class="prow"><label for="in-${i}">${esc(x.l)} =</label><input id="in-${i}" inputmode="decimal" autocomplete="off" spellcheck="false"><span class="unit">${esc(x.u)}</span><span class="res2" id="rs-${i}"></span></div>`).join('')}</div></div>
+      <div class="acts"><button type="button" class="btn" id="chk">Kontrol et</button><button type="button" class="btn ghost" id="hint">İpucu</button><button type="button" class="btn ghost" id="sol">Çözümü göster</button></div>
+      <div id="out"></div></div></article>`;
+  }
+  function cardB(d) {
+    const q = d.q;
+    return `<article class="sheet">${head(d, 'PART B · KAVRAMSAL', 'Kitapta ' + q.ref + ' · Discussion Question')}
+      <div class="sheet-b"><p class="qtext">${esc(q.q)}</p>
+      <div class="box"><span class="box-l">Write your answer in the box below!</span><textarea class="own" id="own" placeholder="Cevabını sınavdaki gibi 3–5 cümleyle yaz (İngilizce ya da Türkçe). Sonra karşılaştır.">${esc(notes[d.id] || '')}</textarea></div>
+      <div class="acts"><button type="button" class="btn" id="showA">Cevabı göster</button></div>
+      <div id="out"></div></div></article>`;
+  }
+  function cardA(d) {
+    const r = d.r, p = status[d.id + ':pick'];
+    return `<article class="sheet">${head(d, 'PART A · CLICKER', 'Slayt Q' + r[0] + ' · YF15e Ch0' + r[0].split('.')[0] + ' destesi')}
+      <div class="sheet-b"><h2 class="qtitle">${esc(r[1])}</h2>
+      <div class="slidecall"><b>Q${r[0]}</b><span>Soruyu ve şıkları clicker slaytından oku, sonra cevabını seç.</span></div>
+      <div class="abcde">${'ABCDE'.split('').map(L => `<button type="button" data-l="${L}" ${p ? 'disabled' : ''} class="${p && L === r[2] ? 'right' : p && L === p ? 'wrong' : ''}">${L}</button>`).join('')}</div>
+      <div id="out">${p ? `<div class="solbox"><span class="lab">${p === r[2] ? 'Doğru' : 'Cevap ' + r[2]}</span><span>${esc(r[3])}</span></div>` : ''}</div></div></article>`;
+  }
+  function wire(d) {
+    if (d.type === 'C') {
+      const p = d.p, out = $('out');
+      const showSol = (label) => { out.innerHTML = `<div class="solbox"><span class="lab">${label}</span>${p.sol.map(s => `<span>${esc(s)}</span>`).join('')}<span class="answ">Cevaplar: ${p.parts.map(x => esc(x.l) + ' = ' + fmtN(x.a) + ' ' + esc(x.u)).join(' · ')}</span></div>`; };
+      $('chk').addEventListener('click', () => {
+        let all = true, any = false;
+        p.parts.forEach((x, i) => {
+          const inp = $('in-' + i), rs = $('rs-' + i), raw = inp.value.trim().replace(',', '.');
+          if (!raw) { all = false; rs.textContent = ''; inp.className = ''; return; }
+          any = true;
+          const v = parseFloat(raw), ok = !isNaN(v) && (x.a === 0 ? Math.abs(v) < 1e-6 : Math.abs(v - x.a) <= Math.abs(x.a) * 0.02);
+          inp.className = ok ? 'ok' : 'bad'; rs.className = 'res2 ' + (ok ? 'ok' : 'bad'); rs.textContent = ok ? '✓' : '✗';
+          if (!ok) all = false;
+        });
+        if (!any) return;
+        status[d.id] = all ? 'ok' : 'bad'; save();
+        if (all) showSol('Doğru · çözüm'); else out.innerHTML = '<p class="answ">Yanlış olanları düzelt ya da "İpucu"ya bak.</p>';
+        meters(); qmap(list()); refreshHead(d);
+      });
+      $('hint').addEventListener('click', () => { out.innerHTML = `<div class="solbox"><span class="lab">İpucu</span><span>${esc(p.sol[0])}</span></div>`; });
+      $('sol').addEventListener('click', () => { if (!status[d.id]) { status[d.id] = 'seen'; save(); meters(); qmap(list()); refreshHead(d); } showSol('Çözüm'); });
+    } else if (d.type === 'B') {
+      const ta = $('own');
+      ta.addEventListener('input', () => { notes[d.id] = ta.value; store.set('notes', notes); });
+      $('showA').addEventListener('click', () => {
+        $('out').innerHTML = `<div class="solbox"><span class="lab">Örnek cevap</span><span>${esc(d.q.a)}</span></div><p class="answ">Kendi cevabın bunu karşılıyor mu?</p><div class="grade"><button type="button" class="g1" data-g="ok">Bildim ✓</button><button type="button" class="g2" data-g="bad">Bilemedim ✗</button></div>`;
+        $('out').querySelectorAll('[data-g]').forEach(b => b.addEventListener('click', () => { status[d.id] = b.dataset.g; save(); meters(); qmap(list()); refreshHead(d); go(1); }));
+      });
+    } else {
+      $('card').querySelectorAll('.abcde button').forEach(b => b.addEventListener('click', () => {
+        status[d.id + ':pick'] = b.dataset.l; status[d.id] = b.dataset.l === d.r[2] ? 'ok' : 'bad'; save(); render();
+      }));
+    }
+  }
+  function refreshHead(d) { const h = $('card').querySelector('.sheet-h .st2'); const n = stLabel(d.id); if (h) h.outerHTML = n; else $('card').querySelector('.sheet-h').insertAdjacentHTML('beforeend', n); }
+  function fmtN(v) { if (v === 0) return '0'; const a = Math.abs(v); if (a >= 1e5 || a < 1e-3) return v.toExponential(2).replace('e', ' × 10^'); const p = Math.max(0, 2 - Math.floor(Math.log10(a))); return (+v.toFixed(p)).toString(); }
+  function render() {
+    const L = list();
+    meters();
+    if (!L.length) { $('card').innerHTML = '<div class="sheet"><p class="empty">Bu filtrede soru yok. Filtreleri değiştir.</p></div>'; $('pos').textContent = '0 / 0'; qmap(L); return; }
+    let i = L.findIndex(d => d.id === curId); if (i < 0) { i = 0; curId = L[0].id; }
+    store.set('cur', curId);
+    const d = L[i];
+    $('pos').textContent = `${i + 1} / ${L.length}`;
+    $('card').innerHTML = d.type === 'C' ? cardC(d) : d.type === 'B' ? cardB(d) : cardA(d);
+    wire(d);
+    $('prev').disabled = i === 0; $('next').disabled = i === L.length - 1;
+    qmap(L);
+    const cur = $('qmap').querySelector('.cur'); if (cur) cur.scrollIntoView({ block: 'nearest' });
+  }
+  function go(dir) { const L = list(); const i = L.findIndex(d => d.id === curId); const j = Math.min(L.length - 1, Math.max(0, i + dir)); if (j !== i) { curId = L[j].id; render(); window.scrollTo({ top: Math.min(window.scrollY, $('v-soru').offsetTop) }); } }
+  $('prev').addEventListener('click', () => go(-1));
+  $('next').addEventListener('click', () => go(1));
+  $('shuffle').addEventListener('click', () => { const ids = DECK.map(d => d.id); for (let k = ids.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [ids[k], ids[j]] = [ids[j], ids[k]]; } order = ids; const L = list(); curId = L.length ? L[0].id : null; render(); });
+  let armed = false;
+  $('reset').addEventListener('click', e => {
+    if (!armed) { armed = true; e.target.textContent = 'Emin misin? Tekrar bas'; setTimeout(() => { armed = false; e.target.textContent = 'İlerlemeyi sıfırla'; }, 3000); return; }
+    status = {}; notes = {}; save(); store.set('notes', notes); armed = false; e.target.textContent = 'İlerlemeyi sıfırla'; render();
+  });
+  document.addEventListener('keydown', e => {
+    if ($('v-soru').hidden) return;
+    const t = e.target.tagName;
+    if (e.key === 'Enter' && t === 'INPUT') { e.preventDefault(); const c = $('chk'); if (c) c.click(); return; }
+    if (t === 'INPUT' || t === 'TEXTAREA') return;
+    if (e.key === 'ArrowRight') go(1); else if (e.key === 'ArrowLeft') go(-1);
+  });
+  render();
+})();
+
+// ---------- exam dates ----------
+const COURSES = [
+  { id: 'math', c: 'c-math', name: 'MATH101 Calculus I' },
+  { id: 'cs', c: 'c-cs', name: 'CS103 Programming' },
+  { id: 'elit', c: 'c-elit', name: 'ELIT100 English' },
+  { id: 'ens', c: 'c-ens', name: 'ENS101 Engineering' }
+];
+(function () {
+  const root = document.getElementById('dates'), saved = store.get('dates', {});
+  root.innerHTML = `<label class="c-ns">NS102 Physics<input type="date" id="d-ns" value="2026-11-14" disabled><span class="left" id="l-ns"></span></label>`;
+  const nsLeft = Math.round((new Date(2026, 10, 14) - today) / DAY);
+  document.getElementById('l-ns').textContent = nsLeft > 0 ? nsLeft + ' gün kaldı' : nsLeft === 0 ? 'bugün' : 'geçti';
+  COURSES.forEach(c => {
+    const l = document.createElement('label'); l.className = c.c;
+    l.innerHTML = `${c.name}<input type="date" id="d-${c.id}" min="2026-11-09" max="2026-11-30" value="${saved[c.id] || ''}"><span class="left"></span>`;
+    root.appendChild(l);
+    const inp = l.querySelector('input'), left = l.querySelector('.left');
+    const upd = () => {
+      if (!inp.value) { left.textContent = 'tarih girilmedi'; return; }
+      const [y, m, d] = inp.value.split('-').map(Number);
+      const n = Math.round((new Date(y, m - 1, d) - today) / DAY);
+      left.textContent = n > 0 ? n + ' gün kaldı' : n === 0 ? 'bugün' : 'geçti';
+    };
+    inp.addEventListener('change', () => { const s = store.get('dates', {}); s[c.id] = inp.value; store.set('dates', s); upd(); });
+    upd();
+  });
+})();
+
+// ---------- plan ----------
+const PLAN = [
+  { date: [2026, 10, 9], cls: 'Ders: 09:00–19:00 dolu', tasks: [
+    { c: 'ns', t: '20:00 · 45 dk', w: 'Geçen yılın sınavı: B1–C3 çözümlerini oku, "Kâğıttaki hata" kutularını not al' },
+    { c: 'ns', t: '21:00 · 60 dk', w: 'Clicker Bölüm 1 + 2 (39 soru): slayttan cevapla, burada kontrol et' }
+  ]},
+  { date: [2026, 10, 10], cls: 'Ders: 09–12, 13–15, 16–19', tasks: [
+    { c: 'ns', t: '19:30 · 45 dk', w: 'Ders 2: Newton yasaları + FBD' },
+    { c: 'ns', t: '20:30 · 45 dk', w: 'Clicker Bölüm 3 + 4 (36 soru)', u: 'Takıldığın ivme yönü sorusu için circular motion videosu' },
+    { c: 'ns', t: '21:30 · 30 dk', w: 'Kitap tartışma soruları Bölüm 2–3: her birine sesli cevap ver, sonra aç' }
+  ]},
+  { date: [2026, 10, 11], cls: 'Boş gün · en önemli gün', tasks: [
+    { c: 'ns', t: '10:00 · 75 dk', w: 'Ders 3: sürtünme ve dairesel hareket, çözümlü örnekleri kâğıtta kendin çöz', u: 'Friction / inclined plane videosu, 1–2 ders' },
+    { c: 'ns', t: '11:30 · 30 dk', w: 'Clicker Bölüm 5 (13 soru)' },
+    { c: 'ns', t: '13:00 · 3 saat', w: 'Kitap exercise\'ları Bölüm 5 (26 soru): eText\'te aç, kâğıtta çöz, cevabı burada kontrol et' },
+    { c: 'ns', t: '16:30 · 30 dk', w: 'Kitap tartışma soruları Bölüm 4–5' },
+    { c: 'cs', t: '18:00 · 45 dk', w: 'CS103: döngüler ve fonksiyonlar (vize haftası için ısınma)', u: 'C++ kursunda loops coding exercise' }
+  ]},
+  { date: [2026, 10, 12], cls: 'Ders: CS tutorial 11–13', tasks: [
+    { c: 'ns', t: '14:00 · 45 dk', w: 'Ders 4: iş ve kinetik enerji + Clicker Bölüm 6', u: 'Work–energy theorem videosu' },
+    { c: 'ns', t: '15:00 · 90 dk', w: 'Kitap exercise\'ları Bölüm 3 ve 6 (28 soru)' },
+    { c: 'ns', t: '17:00 · 30 dk', w: 'Kitap tartışma soruları Bölüm 6' },
+    { c: 'ns', t: '19:00 · 60 dk', w: 'Bölüm 7 vizede varsa: Ders 5 + Bölüm 7 soruları (yoksa bu adımı atla)' },
+    { c: 'math', t: '20:15 · 45 dk', w: 'MATH101: limit ve türev kuralları tekrarı' }
+  ]},
+  { date: [2026, 10, 13], cls: 'Boş gün · son gün', tasks: [
+    { c: 'ns', t: '10:00 · 90 dk', w: 'Deneme: geçen yılın B1–C3\'ünü kâğıda süre tutarak sıfırdan çöz' },
+    { c: 'ns', t: '12:00 · 60 dk', w: 'Kitap exercise\'larından işaretlemediklerin + Bölüm 2 ve 4' },
+    { c: 'ns', t: '14:00 · 45 dk', w: 'Clicker "Yanlışlarım" filtresi: hepsini tekrar et' },
+    { c: 'ns', t: '15:00 · 45 dk', w: 'Formül kâğıdı: Bölüm 1–6 tek sayfa, kendi el yazınla' },
+    { c: 'ns', t: '16:00 · 45 dk', w: 'Tartışma sorularını hızlıca tekrar et + 1 set benzer soru. Sonra bırak, erken uyu' }
+  ]},
+  { date: [2026, 10, 14], exam: true, cls: 'FİZİK VİZESİ', tasks: [
+    { c: 'ns', t: 'Sabah · 20 dk', w: 'Formül kâğıdına ve clicker yanlış listene son bakış. Yeni soru çözme' },
+    { c: 'ns', t: 'Sınavda', w: 'Önce Part A (clicker), sonra C, en son B. Her problemde FBD çiz, cevabı kutuya birimiyle yaz' }
+  ]}
+];
+const WEEK2 = { tasks: [
+  { c: 'math', t: '15–22 Kasım', w: 'MATH101 vizesi: tarihini girince gün gün dağıtırım', u: 'Calculus 1 kursunun quiz\'leri' },
+  { c: 'cs', t: '15–22 Kasım', w: 'CS103 vizesi: kod okuma, çıktı tahmini, hata bulma', u: 'C++ coding exercise\'ları' },
+  { c: 'elit', t: '15–22 Kasım', w: 'ELIT100: paragraf yazma pratiği' },
+  { c: 'ens', t: '15–22 Kasım', w: 'ENS101: slaytları gönderirsen not hazırlarım' }
+]};
+(function () {
+  const root = document.getElementById('days'), done = store.get('done', {});
+  const DN = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+  const LBL = { ns: 'FİZİK', math: 'MATH', cs: 'CS103', elit: 'ELIT', ens: 'ENS' };
+  let total = 0;
+  const esc = s => s.replace(/"/g, '&quot;');
+  const taskHTML = (t, key) => { total++; return `<li class="task ${done[key] ? 'done' : ''}"><input type="checkbox" id="t-${key}" data-k="${key}" ${done[key] ? 'checked' : ''} aria-label="${esc(t.w)}"><div class="tx"><div class="top"><span class="chip c-${t.c}">${LBL[t.c]}</span><span class="what">${t.w}</span></div><span class="time">${t.t}</span>${t.u ? `<span class="ud"><b>Udemy:</b> ${t.u}</span>` : ''}</div></li>`; };
+  let html = '';
+  PLAN.forEach((d, i) => {
+    const dt = new Date(...d.date);
+    const cls = ['day', +dt === +today ? 'today' : '', d.exam ? 'exam' : ''].join(' ');
+    html += `<div class="${cls}"><div class="day-h"><span class="dn">${DN[dt.getDay()]}</span><span class="dd">${fmtDate(dt)}</span><span class="cls">${d.cls}</span></div><ul class="tasks">${d.tasks.map((t, k) => taskHTML(t, i + '-' + k)).join('')}</ul></div>`;
+  });
+  html += `<div class="day"><div class="day-h"><span class="dn">15–22 Kasım</span><span class="dd">diğer vizeler</span><span class="cls">Tarihleri gönder, dağıtayım</span></div><ul class="tasks">${WEEK2.tasks.map((t, k) => taskHTML(t, 'w2-' + k)).join('')}</ul></div>`;
+  root.innerHTML = html;
+  const ps = document.getElementById('pscore'), pb = document.getElementById('pbar');
+  const upd = () => { const n = root.querySelectorAll('input:checked').length; ps.textContent = `${n} / ${total} görev`; pb.style.width = (total ? n / total * 100 : 0) + '%'; };
+  root.addEventListener('change', ev => {
+    const cb = ev.target; if (!cb.dataset.k) return;
+    const st = store.get('done', {}); st[cb.dataset.k] = cb.checked; store.set('done', st);
+    cb.closest('.task').classList.toggle('done', cb.checked); upd();
+  });
+  upd();
+})();
+
+</script>
+</body>
+</html>
